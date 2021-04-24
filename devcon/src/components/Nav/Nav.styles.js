@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { md } from "../../theme/breakpoints";
+
 export const NavWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -7,12 +9,36 @@ export const NavWrapper = styled.div`
 
   .logo-container {
     align-self: flex-start;
+    ${md} {
+      width: 4rem;
+      height: 4rem;
+    }
   }
 
   .logo {
     width: 134px;
     height: 134px;
     object-fit: contain;
+
+    ${md} {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  .hamburger {
+    display: none;
+    ${md} {
+      display: block;
+      font-size: 1.5rem;
+      margin: auto 0 auto auto;
+    }
+  }
+
+  ${md} {
+    flex-direction: row;
+    padding: 1rem;
+    align-items: center;
   }
 `;
 
@@ -44,5 +70,9 @@ export const NavItem = styled.div`
 
   &:hover::before {
     width: 100%;
+  }
+
+  ${md} {
+    display: none;
   }
 `;

@@ -7,7 +7,7 @@ export const IndexWrapper = styled.div`
   flex-direction: column;
   margin: 0 12rem;
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 
   ${md} {
     margin: 0;
