@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { md, xs } from "../../theme/breakpoints";
+import { lg, md, xs } from "../../theme/breakpoints";
 
 export const HeroSection = styled.div`
   display: flex;
@@ -15,6 +15,11 @@ export const PrimaryTitle = styled.h1`
   line-height: 254px;
   font-weight: 800;
   margin: 0;
+
+  ${lg} {
+    font-size: 180px;
+    line-height: 224px;
+  }
 
   ${md} {
     font-size: 8rem;
@@ -34,6 +39,11 @@ export const SecondaryTitle = styled.h3`
   padding: 0 2rem;
   letter-spacing: 0.37em;
   margin: 0;
+
+  ${lg} {
+    font-size: 48px;
+    line-height: 56px;
+  }
 
   ${md} {
     font-size: 2rem;
@@ -104,6 +114,10 @@ export const StyledVideo = styled.video`
   border-radius: 20px;
   width: 1078px;
   object-fit: contain;
+
+  ${lg} {
+    margin: 4rem 0;
+  }
 
   ${md} {
     width: 95%;
