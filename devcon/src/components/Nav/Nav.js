@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <NavWrapper>
       <StaticImage
-        src="../../images/logo.svg"
+        src="../../images/logo.png"
         alt="devcon"
         loading="eager"
         imgClassName="logo"
