@@ -22,18 +22,6 @@ const AboutPage = () => {
         enim lobortis. Egestas purus viverra accumsan in. Adipiscing at in tellus integer
         feugiat scelerisque varius morbi enim. Feugiat sed lectus vestibulum mattis ullamc
         orper.
-        <br />
-        <br />
-        Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Enim blandit 
-        volutpat maecenas volutpat blandit aliquam etiam erat. Posuere urna nec tincidunt 
-        praesent semper feugiat nibh sed. Nibh ipsum consequat nisl vel. Quam pellentesque
-        nec nam aliquam sem et tortor consequat. Euismod quis viverra nibh cras pulvinar.
-        A diam maecenas sed enim ut sem viverra. Sed viverra ipsum nunc aliquet bibendum 
-        enim facilisis gravida. Vel elit scelerisque mauris pellentesque pulvinar pellente
-        sque. Porta nibh venenatis cras sed felis eget velit aliquet. Ullamcorper morbi tin
-        cidunt ornare massa. Quis vel eros donec ac odio tempor orci dapibus ultrices. Pul
-        vinar pellentesque habitant morbi tristique senectus et netus. Nunc mattis enim ut 
-        tellus elementum sagittis vitae et.
         </StyledPara>
 
         <AboutImage>
