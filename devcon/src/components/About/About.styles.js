@@ -103,15 +103,6 @@ export const SideAction = styled.div`
   }
 `;
 
-export const RoundButton = styled.button`
-  background-color: #c4c4c4;
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
+export const StyledPolygon = styled.img`
   margin: 1rem;
-  cursor: pointer;
-
-  &:focus {
-    outline: none;
-  }
 `;

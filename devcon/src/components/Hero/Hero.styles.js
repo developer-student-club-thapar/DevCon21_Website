@@ -15,6 +15,7 @@ export const PrimaryTitle = styled.h1`
   line-height: 254px;
   font-weight: 800;
   margin: 0;
+  color: #3dbfe8;
 
   ${lg} {
     font-size: 180px;

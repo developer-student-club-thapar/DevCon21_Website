@@ -8,21 +8,23 @@ export const NavWrapper = styled.div`
   padding: 2rem;
 
   .logo-container {
+    width: 134px !important;
+    height: 134px !important;
     align-self: flex-start;
     ${md} {
-      width: 4rem;
-      height: 4rem;
+      width: 4rem !important;
+      height: 4rem !important;
     }
   }
 
   .logo {
-    width: 134px;
-    height: 134px;
+    width: 134px !important;
+    height: 134px !important;
     object-fit: contain;
 
     ${md} {
-      width: 4rem;
-      height: 4rem;
+      width: 4rem !important;
+      height: 4rem !important;
     }
   }
 
@@ -47,7 +49,6 @@ export const NavAction = styled.div`
   flex-direction: row;
   align-self: center;
   width: fit-content;
-  margin-top: 1.2rem;
 `;
 
 export const NavItem = styled.div`

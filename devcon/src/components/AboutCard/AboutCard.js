@@ -6,7 +6,7 @@ import gitBranch from "../../images/git-branch.svg";
 const AboutCard = () => {
   return (
     <Card>
-      <h1 className="heading">Hackathon</h1>
+      <h1 className="heading">HackOverflow</h1>
       <p className="description">
         A 24hr hackathon for budding developers with alot of prizes
       </p>

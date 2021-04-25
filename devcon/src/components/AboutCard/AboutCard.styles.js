@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { md, mdxl, sm, xs } from "../../theme/breakpoints";
+import { lg, md, mdxl, sm, xs } from "../../theme/breakpoints";
 
 export const Card = styled.div`
   display: flex;
@@ -41,11 +41,13 @@ export const Card = styled.div`
     margin-top: -10px;
   }
 
+  ${lg},
   ${mdxl} {
     margin-right: 1rem;
 
     .artwork {
-      right: -100px;
+      right: -140px;
+      top: -140px;
     }
   }
 
