@@ -46,6 +46,10 @@ export const CardAlt = styled.div`
 
   ${lg} {
     margin-left: 1rem;
+
+    .artwork {
+      top: -110px;
+    }
   }
 
   ${md},
@@ -65,8 +69,8 @@ export const CardAlt = styled.div`
     }
 
     .artwork {
-      top: -100px;
-      left: -70px;
+      top: -120px;
+      left: -90px;
     }
   }
 `;

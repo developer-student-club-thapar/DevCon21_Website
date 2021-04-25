@@ -8,10 +8,11 @@ import {
   ActionContainer,
   ParaContainer,
   SideAction,
-  RoundButton,
+  StyledPolygon,
 } from "./About.styles";
 import AboutCard from "../AboutCard/AboutCard";
 import AboutCardAlt from "../AboutCardAlt/AboutCardAlt";
+import Polygon from "../../images/Polygon.svg";
 
 const About = () => {
   return (
@@ -32,9 +33,9 @@ const About = () => {
           </CardContainer>
         </ParaContainer>
         <SideAction>
-          <RoundButton />
-          <RoundButton />
-          <RoundButton />
+          <StyledPolygon src={Polygon} alt="polygon" />
+          <StyledPolygon src={Polygon} alt="polygon" />
+          <StyledPolygon src={Polygon} alt="polygon" />
         </SideAction>
       </ActionContainer>
     </Wrapper>

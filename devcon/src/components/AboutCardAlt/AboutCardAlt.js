@@ -6,7 +6,7 @@ import user from "../../images/user.svg";
 const AboutCardAlt = () => {
   return (
     <CardAlt>
-      <h1 className="heading">Portfolio</h1>
+      <h1 className="heading">Designique</h1>
       <p className="description">
         A portfolio building competition for 1st and 2nd year students
       </p>
