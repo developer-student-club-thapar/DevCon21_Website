@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { md } from "../../theme/breakpoints";
+import { lg, md, xs } from "../../theme/breakpoints";
 
 export const HeroSection = styled.div`
   display: flex;
@@ -16,9 +16,19 @@ export const PrimaryTitle = styled.h1`
   font-weight: 800;
   margin: 0;
 
+  ${lg} {
+    font-size: 180px;
+    line-height: 224px;
+  }
+
   ${md} {
-    font-size: 10rem;
-    line-height: 11rem;
+    font-size: 8rem;
+    line-height: 10rem;
+  }
+
+  ${xs} {
+    font-size: 4rem;
+    line-height: 5rem;
   }
 `;
 
@@ -30,9 +40,19 @@ export const SecondaryTitle = styled.h3`
   letter-spacing: 0.37em;
   margin: 0;
 
+  ${lg} {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
   ${md} {
     font-size: 2rem;
     line-height: 5rem;
+  }
+
+  ${xs} {
+    font-size: 1rem;
+    line-height: 3rem;
   }
 `;
 
@@ -82,6 +102,10 @@ export const ActionButton = styled.button`
   &:last-of-type {
     margin-left: 2rem;
   }
+
+  ${xs} {
+    width: 50%;
+  }
 `;
 
 export const StyledVideo = styled.video`
@@ -91,7 +115,17 @@ export const StyledVideo = styled.video`
   width: 1078px;
   object-fit: contain;
 
+  ${lg} {
+    margin: 4rem 0;
+  }
+
   ${md} {
     width: 95%;
+    filter: drop-shadow(0px 0px 2rem #000000);
+  }
+
+  ${xs} {
+    width: 80%;
+    margin: 2rem 0;
   }
 `;
