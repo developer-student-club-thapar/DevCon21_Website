@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { lg, md, sm, xs } from "../../theme/breakpoints";
 
 export const CardAlt = styled.div`
   display: flex;
@@ -41,5 +42,31 @@ export const CardAlt = styled.div`
 
   &:hover {
     margin-top: -10px;
+  }
+
+  ${lg} {
+    margin-left: 1rem;
+  }
+
+  ${md},
+  ${sm},
+  ${xs} {
+    max-width: 100%;
+    margin: 1rem auto;
+    height: 260px;
+
+    .heading {
+      font-size: 2rem;
+      line-height: 2.4rem;
+    }
+
+    .description {
+      font-size: 1rem;
+    }
+
+    .artwork {
+      top: -100px;
+      left: -70px;
+    }
   }
 `;
