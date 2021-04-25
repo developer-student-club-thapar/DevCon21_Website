@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { md, mdxl, sm, xs } from "../../theme/breakpoints";
 
 export const Card = styled.div`
   display: flex;
@@ -12,6 +13,7 @@ export const Card = styled.div`
   overflow: hidden;
   height: 300px;
   cursor: pointer;
+
   transition: all 0.1s ease-in-out;
 
   .heading {
@@ -37,5 +39,35 @@ export const Card = styled.div`
 
   &:hover {
     margin-top: -10px;
+  }
+
+  ${mdxl} {
+    margin-right: 1rem;
+
+    .artwork {
+      right: -100px;
+    }
+  }
+
+  ${md},
+  ${sm},
+  ${xs} {
+    max-width: 100%;
+    margin: 1rem auto;
+    height: 260px;
+
+    .heading {
+      font-size: 2rem;
+      line-height: 2.4rem;
+    }
+
+    .description {
+      font-size: 1rem;
+    }
+
+    .artwork {
+      top: -170px;
+      right: -110px;
+    }
   }
 `;
