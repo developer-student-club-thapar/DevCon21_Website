@@ -3,6 +3,7 @@ module.exports = {
     title: "Devcon",
   },
   plugins: [
+    "gatsby-plugin-anchor-links",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",

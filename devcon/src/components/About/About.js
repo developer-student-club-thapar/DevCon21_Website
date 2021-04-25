@@ -16,7 +16,7 @@ import Polygon from "../../images/Polygon.svg";
 
 const About = () => {
   return (
-    <Wrapper>
+    <Wrapper id="About">
       <StyledHeading>About</StyledHeading>
       <ActionContainer>
         <ParaContainer>

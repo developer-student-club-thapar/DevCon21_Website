@@ -3,8 +3,23 @@ import { StaticImage } from "gatsby-plugin-image";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 import { NavAction, NavItem, NavWrapper } from "./Nav.styles";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const Nav = () => {
+  const NavLink = ({ to, title, children }) => (
+    <AnchorLink
+      gatsbyLinkProps={{
+        style: {
+          textDecoration: "none",
+          color: "inherit",
+        },
+      }}
+      to={to}
+      title={title}
+    >
+      <NavItem>{children}</NavItem>
+    </AnchorLink>
+  );
   return (
     <NavWrapper>
       <StaticImage
@@ -15,9 +30,16 @@ const Nav = () => {
         className="logo-container"
       />
       <NavAction>
-        <NavItem>Home</NavItem>
-        <NavItem>About</NavItem>
-        <NavItem>Timeline</NavItem>
+        <NavLink to="/#Home" title="Home">
+          Home
+        </NavLink>
+        <NavLink to="/#About" title="About">
+          About
+        </NavLink>
+        <NavLink to="/#Timeline" title="Timeline">
+          Timeline
+        </NavLink>
+
         <NavItem>Contact</NavItem>
       </NavAction>
       <HiOutlineMenuAlt3 className="hamburger" />
