@@ -155,14 +155,14 @@ const Timeline = () => {
   );
   const settings = {
     arrows: false,
-    infinite: true,
+    infinite: false,
     centerPadding: "20px",
     slidesToShow: 3,
     swipeToSlide: true,
   };
   console.log(data[day].start.date);
   return (
-    <TimelineSection>
+    <TimelineSection id="Timeline">
       <Heading>Timeline</Heading>
       <TabContainer>
         <Tab current={day} value={"day1"}>

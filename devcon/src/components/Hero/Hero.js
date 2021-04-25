@@ -13,7 +13,7 @@ import {
 
 const Hero = () => {
   return (
-    <HeroSection>
+    <HeroSection id="Home">
       <PrimaryTitle>DEVCON</PrimaryTitle>
       <SecondaryTitle>THE CODE AWAKENS</SecondaryTitle>
       <ActionBar>
