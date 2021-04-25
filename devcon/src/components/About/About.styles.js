@@ -2,61 +2,72 @@ import styled from "styled-components";
 
 import { md } from "../../theme/breakpoints";
 
-
 // styles
 export const Wrapper = styled.div`
-    display: flex; 
-    align-items: left;
-    flex-direction: column;
-    align-self: center;
-    justify-content: center;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
 `;
 export const StyledHeading = styled.h2`
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 120px;
-    line-height: 145px;
-    color: white;
+  font-weight: 800;
+  font-size: 120px;
+  line-height: 145px;
+  color: white;
+  margin: 2rem 0 1rem 0;
 
-    ${md} {
- }
+  ${md} {
+  }
+`;
+
+export const ActionContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const ParaContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+
+  ${md} {
+    max-width: 100%;
+  }
 `;
 
 export const StyledPara = styled.p`
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 39px;
-    color: white;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: white;
+  position: relative;
 `;
 
-export const AboutImage = styled.div`
-    /* display: flex;
-    flex-direction: row; */
-    justify-content: center;
-    margin: 2rem 0;
-    padding-bottom: 280px;
+export const CardContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem 0;
+  height: 600px;
+`;
 
-    .logo1 {
-    width: 400px;
-    height: 300px;
-    border-radius: 8px;
-    margin: 10px 20px 10px 20px;
-  }
-  .logo2{
-    width: 400px;
-    height: 300px;
-    top: 200px;
-    border-radius: 8px;
-    margin: 10px 150px 10px 10px;
-  }
-  .logo3{
-    width: 60px;
-    height: 300px;
-    border-radius: 8px;
-    margin: 10px 0px 10px 20px;
-  }
+export const SideAction = styled.div`
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+`;
 
+export const RoundButton = styled.button`
+  background-color: #c4c4c4;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin: 1rem;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 `;
