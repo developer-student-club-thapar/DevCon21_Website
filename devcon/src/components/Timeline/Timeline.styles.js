@@ -82,6 +82,10 @@ export const TimelineCard = styled(Card)`
   flex-direction: column;
   position: relative;
 
+  @media only screen and (max-width: 1850px) {
+    width: 380px;
+  }
+
   ${md} {
     width: 90%;
     margin: auto;
@@ -206,6 +210,15 @@ export const CardImg = styled.div`
   .card-img-container {
     height: 280px;
     width: 240px;
+  }
+
+  @media only screen and (max-width: 1850px) {
+    height: 250px;
+    width: 190px;
+    .card-img-container {
+      height: 250px;
+      width: 190px;
+    }
   }
 
   ${md} {
