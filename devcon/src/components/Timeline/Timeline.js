@@ -23,43 +23,29 @@ const data = {
   day1: {
     timeline: [
       {
-        name: "Jaskeerat singh randhawa",
-        id: "postion @ Google",
+        name: "Vipul Srivastava",
+        id: "SDE at Amazon",
         topic: "Importance of Data Structures for developers",
         time: "5pm-7pm",
       },
 
       {
-        name: "Jaskeerat singh randhawa",
-        id: "postion @ Google",
-        topic: "Importance of Data Structures for developers",
+        name: "Shubham Rawat",
+        id: "Software Engineering Intern @ Red Hat",
+        topic: "Roadmap for Developers",
         time: "5pm-7pm",
       },
 
       {
-        name: "Jaskeerat singh randhawa",
-        id: "postion @ Google",
-        topic: "Importance of Data Structures for developers",
-        time: "5pm-7pm",
-      },
-
-      {
-        name: "Jaskeerat singh randhawa",
-        id: "postion @ Google",
-        topic: "Importance of Data Structures for developers",
-        time: "5pm-7pm",
-      },
-
-      {
-        name: "Jaskeerat singh randhawa",
-        id: "postion @ Google",
-        topic: "Importance of Data Structures for developers",
+        name: "Harpreet Kaur",
+        id: "Global Product/Technical Program Leader",
+        topic: "Learning out of the box",
         time: "5pm-7pm",
       },
     ],
     start: {
-      date: "14 th may 2021",
-      content: "Day 1 is filled with fun activities ",
+      date: "14th may 2021",
+      content: "Day 1 is filled making your roots strong",
     },
   },
   day2: {
@@ -67,41 +53,35 @@ const data = {
       {
         name: "Jaskeerat singh randhawa",
         id: "postion @ Google",
-        topic: "Importance of Data Structures for developers",
+        topic: "Choose your path between Full Stack and Machine Learning",
         time: "5pm-7pm",
       },
 
       {
         name: "Jaskeerat singh randhawa",
         id: "postion @ Google",
-        topic: "Importance of Data Structures for developers",
+        topic: "Why Design is Important for Development",
         time: "5pm-7pm",
       },
 
       {
         name: "Jaskeerat singh randhawa",
         id: "postion @ Google",
-        topic: "Importance of Data Structures for developers",
+        topic: "Building a UI Live",
         time: "5pm-7pm",
       },
 
       {
         name: "Jaskeerat singh randhawa",
         id: "postion @ Google",
-        topic: "Importance of Data Structures for developers",
+        topic: "Cloning app with React",
         time: "5pm-7pm",
       },
 
-      {
-        name: "Jaskeerat singh randhawa",
-        id: "postion @ Google",
-        topic: "Importance of Data Structures for developers",
-        time: "5pm-7pm",
-      },
     ],
     start: {
-      date: "15 th may 2021",
-      content: "Day2 is filled with fun activities",
+      date: "15th may 2021",
+      content: "Day2 is filled with connecting D's",
     },
   },
   day3: {
@@ -143,7 +123,7 @@ const data = {
     ],
     start: {
       date: "16th may 2021",
-      content: "Day 3 is filled with fun activities ",
+      content: "Day 3 is filled with Personal Development ",
     },
   },
 };

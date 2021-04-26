@@ -21,10 +21,9 @@ const About = () => {
       <ActionContainer>
         <ParaContainer>
           <StyledPara>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum
-            mauris est sed quisque. Facilisis risus mi sit lectus sed turpis
-            ipsum mattis. Mauris dolor ultricies vel rhoncus nullam. Odio
-            pharetra hac mattis pharetra et non.
+            A wide assortment of events all been compiled in a 3 days event, never seen before sessions and a lot more. It is a grand opportunity to learn and network. This event will give students insights into a multitude of technological aspects.
+The event provides an opportunity for the attendees to figure out their path of choice by witnessing eminent personalities as keynote speakers from various domains talk and share their experience on the same.
+
           </StyledPara>
 
           <CardContainer>
