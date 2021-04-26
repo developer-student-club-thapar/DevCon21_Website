@@ -39,7 +39,9 @@ const Nav = () => {
         <NavLink to="/#Timeline" title="Timeline">
           Timeline
         </NavLink>
-
+        <NavLink to="/#Sponsors" title="Sponsors">
+          Sponsors
+        </NavLink>
         <NavItem>Contact</NavItem>
       </NavAction>
       <HiOutlineMenuAlt3 className="hamburger" />
