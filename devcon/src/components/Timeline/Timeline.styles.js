@@ -32,8 +32,6 @@ export const Heading = styled.h1`
 `;
 
 const Card = styled.div`
-  // width: 175px;
-  // height: 175px;
   width: 350px;
   height: 350px;
   font-size: 10px;
@@ -41,51 +39,120 @@ const Card = styled.div`
   margin: 10px;
   color: black;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 9px;
   overflow: hidden;
 `;
 
 export const TimelineCard = styled(Card)`
   display: flex;
+  height: 472px;
+  width: 472px;
+  flex-direction: column;
+  position: relative;
 `;
 
 export const StartingCard = styled(Card)`
   color: white;
   background-color: transparent;
   display: flex;
-  felx-direction: column;
+  flex-direction: row;
+
+  .date-text {
+    color: #3daae8;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
+
+  .day-description {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: normal;
+  }
+
+  .icon {
+    font-size: 3rem;
+    align-self: flex-end;
+  }
+`;
+
+export const CardWrapper = styled.div`
+  width: fit-content;
+  &:focus {
+    outline: none;
+  }
 `;
 
 export const CardSection = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: flex-end;
+  padding: 0 1rem 1rem 0;
+  margin-top: auto;
+  align-self: flex-end;
 `;
 
 export const CardInfo = styled.div`
   font-size: 15px;
   color: black;
   text-align: right;
+
+  h4 {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.1rem;
+    color: #191919;
+    margin: 0;
+  }
+
+  p {
+    color: #737373;
+    font-size: 0.7rem;
+    font-weight: 300;
+    line-height: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+    max-width: 60%;
+    margin-left: auto;
+  }
+
+  h5 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.2rem;
+  }
 `;
 
 export const CardCircle = styled.div`
   height: 65px;
   width: 65px;
   border-radius: 50%;
-  margin-bottom: 75px;
-  margin-right: 25px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  margin: 1rem 1rem 0 0;
   background-color: black;
   align-self: flex-end;
 `;
 
 export const CardImg = styled.div`
-  border-radius: 0px 0px 40px 0px;
-  height: 180px;
-  width: 300px;
-  box-shadow: 0 0 0 5px #e5e5e5, 0 0 0 10px #f2f2f2;
+  border-radius: 0px 0px 100px 0px;
+  height: 280px;
+  width: 240px;
+  box-shadow: 0 0 0 10px #e5e5e5, 0 0 0 20px #f2f2f2;
   position: relative;
   top: -5px;
   left: -5px;
   overflow: hidden;
+
+  .card-img-container {
+    height: 280px;
+    width: 240px;
+  }
 `;
