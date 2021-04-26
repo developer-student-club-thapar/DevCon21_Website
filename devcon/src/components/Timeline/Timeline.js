@@ -11,9 +11,10 @@ import {
   TabButton,
   Heading,
   Caraousal,
+  CardWrapper,
 } from "./Timeline.styles";
 import Slider from "react-slick";
-import { BiRightArrowCircle } from "react-icons/bi";
+import { AiOutlineRightCircle } from "react-icons/ai";
 import { StaticImage } from "gatsby-plugin-image";
 
 const data = {
@@ -180,28 +181,16 @@ const Timeline = () => {
           <div>
             <StartingCard>
               <div style={{ alignSelf: "center" }}>
-                <h2
-                  style={{
-                    color: "#3DAAE8",
-                    fontSize: "10px",
-                  }}
-                >
-                  {data[day].start.date}
-                </h2>
-                <h2>{data[day].start.content}</h2>
-                <div
-                  style={{
-                    fontSize: "15px",
-                    textAlign: "right",
-                  }}
-                >
-                  <BiRightArrowCircle />
-                </div>
+                <h2 className="date-text">{data[day].start.date}</h2>
+                <h2 className="day-description">{data[day].start.content}</h2>
+              </div>
+              <div className="icon">
+                <AiOutlineRightCircle />
               </div>
             </StartingCard>
           </div>
           {data[day].timeline.map(({ name, id, topic, time }, i) => (
-            <div>
+            <CardWrapper key={i}>
               <TimelineCard key={i}>
                 <CardImg>
                   <StaticImage
@@ -215,14 +204,14 @@ const Timeline = () => {
                 <CardSection>
                   <CardCircle />
                   <CardInfo>
-                    <h4 style={{ margin: "0px" }}>{name}</h4>
-                    <p style={{ color: "#737373", margin: "0px" }}>{id}</p>
+                    <h4>{name}</h4>
+                    <p>{id}</p>
                     <h2>{topic}</h2>
-                    <h5 style={{ margin: "0px" }}>{time}</h5>
+                    <h5>{time}</h5>
                   </CardInfo>
                 </CardSection>
               </TimelineCard>
-            </div>
+            </CardWrapper>
           ))}
         </Slider>
       </Caraousal>
