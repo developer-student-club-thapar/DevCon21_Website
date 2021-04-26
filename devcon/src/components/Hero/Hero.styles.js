@@ -111,7 +111,7 @@ export const ActionButton = styled.button`
 
 export const StyledVideo = styled.video`
   margin: 6rem 0;
-  filter: drop-shadow(0px 0px 160px #000000);
+  box-shadow: rgb(0, 0, 0) 0px 0px 160px;
   border-radius: 20px;
   width: 1078px;
   object-fit: contain;
@@ -122,7 +122,7 @@ export const StyledVideo = styled.video`
 
   ${md} {
     width: 95%;
-    filter: drop-shadow(0px 0px 2rem #000000);
+    box-shadow: rgb(0, 0, 0) 0px 0px 2rem;
   }
 
   ${xs} {

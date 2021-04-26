@@ -49,7 +49,7 @@ export const Heading = styled.h1`
   font-size: 120px;
   line-height: 145px;
   color: white;
-  margin: 2rem 0 1rem 0;
+  margin: 0 0 1rem 0;
 
   ${md} {
     font-size: 6rem;
@@ -86,6 +86,12 @@ export const TimelineCard = styled(Card)`
     width: 90%;
     margin: auto;
   }
+
+  ${xs} {
+    height: 400px;
+    width: 90%;
+    margin: auto;
+  }
 `;
 
 export const StartingCard = styled(Card)`
@@ -109,6 +115,7 @@ export const StartingCard = styled(Card)`
   .icon {
     font-size: 3rem;
     align-self: flex-end;
+    cursor: pointer;
   }
 
   ${md} {
@@ -207,6 +214,15 @@ export const CardImg = styled.div`
     .card-img-container {
       height: 250px;
       width: 190px;
+    }
+  }
+
+  ${xs} {
+    height: 200px;
+    width: 160px;
+    .card-img-container {
+      height: 200px;
+      width: 160px;
     }
   }
 `;

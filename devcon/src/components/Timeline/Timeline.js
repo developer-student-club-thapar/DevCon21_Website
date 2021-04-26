@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Slider from "react-slick";
 import { AiOutlineRightCircle } from "react-icons/ai";
 import { StaticImage } from "gatsby-plugin-image";
@@ -151,6 +151,7 @@ const data = {
 const Timeline = () => {
   const [day, setDay] = useState("day1");
   const breakpoints = useBreakpoint();
+  const slider = useRef(null);
 
   const renderNoOfSildes = () => {
     if (breakpoints.xs) {
@@ -194,7 +195,7 @@ const Timeline = () => {
         </Tab>
       </TabContainer>
       <Caraousal>
-        <Slider {...settings}>
+        <Slider {...settings} ref={slider}>
           <CardWrapper>
             <StartingCard>
               <div style={{ alignSelf: "center" }}>
@@ -202,7 +203,11 @@ const Timeline = () => {
                 <h2 className="day-description">{data[day].start.content}</h2>
               </div>
               <div className="icon">
-                <AiOutlineRightCircle />
+                <AiOutlineRightCircle
+                  onClick={() => {
+                    slider?.current.slickGoTo(1);
+                  }}
+                />
               </div>
             </StartingCard>
           </CardWrapper>
