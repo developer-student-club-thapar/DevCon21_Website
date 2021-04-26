@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import Slider from "react-slick";
+import { AiOutlineRightCircle } from "react-icons/ai";
+import { StaticImage } from "gatsby-plugin-image";
+import { useBreakpoint } from "gatsby-plugin-breakpoints";
+
 import {
   TimelineCard,
   StartingCard,
@@ -13,9 +18,6 @@ import {
   Caraousal,
   CardWrapper,
 } from "./Timeline.styles";
-import Slider from "react-slick";
-import { AiOutlineRightCircle } from "react-icons/ai";
-import { StaticImage } from "gatsby-plugin-image";
 
 const data = {
   day1: {
@@ -148,6 +150,19 @@ const data = {
 
 const Timeline = () => {
   const [day, setDay] = useState("day1");
+  const breakpoints = useBreakpoint();
+
+  const renderNoOfSildes = () => {
+    if (breakpoints.xs) {
+      return 1;
+    } else if (breakpoints.sm) {
+      return 1;
+    } else if (breakpoints.md) {
+      return 2;
+    } else {
+      return 3;
+    }
+  };
 
   const Tab = ({ current, value, children }) => (
     <TabButton selected={current === value} onClick={() => setDay(value)}>
@@ -158,10 +173,10 @@ const Timeline = () => {
     arrows: false,
     infinite: false,
     centerPadding: "20px",
-    slidesToShow: 3,
+    slidesToShow: renderNoOfSildes(),
     swipeToSlide: true,
   };
-  console.log(data[day].start.date);
+
   return (
     <TimelineSection id="Timeline">
       <Heading>Timeline</Heading>

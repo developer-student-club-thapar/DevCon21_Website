@@ -11,6 +11,7 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={darkTheme}>
       <GlobalStyles />
       <Helmet>
+        <title>DevCon</title>
         <link
           rel="stylesheet"
           type="text/css"
