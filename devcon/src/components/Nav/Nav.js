@@ -1,9 +1,9 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import { NavAction, NavItem, NavWrapper } from "./Nav.styles";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import logo from "../../images/logo.png";
 
 const Nav = () => {
   const NavLink = ({ to, title, children }) => (
@@ -22,13 +22,9 @@ const Nav = () => {
   );
   return (
     <NavWrapper>
-      <StaticImage
-        src="../../images/logo.png"
-        alt="devcon"
-        loading="eager"
-        imgClassName="logo"
-        className="logo-container"
-      />
+      <div className="logo-container">
+        <img src={logo} alt="devcon" className="logo" />
+      </div>
       <NavAction>
         <NavLink to="/#Home" title="Home">
           Home
