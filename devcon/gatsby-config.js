@@ -1,3 +1,11 @@
+const defaultQueries = {
+  xs: "(max-width: 320px)",
+  sm: "(max-width: 720px)",
+  md: "(max-width: 1024px)",
+  l: "(max-width: 1536px)",
+  xl: "(max-width: 1850px)",
+};
+
 module.exports = {
   siteMetadata: {
     title: "Devcon",
@@ -10,7 +18,12 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    "gatsby-plugin-breakpoints",
+    {
+      resolve: `gatsby-plugin-breakpoints`,
+      options: {
+        queries: defaultQueries,
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
