@@ -161,7 +161,7 @@ const Timeline = () => {
     } else if (breakpoints.md) {
       return 2;
     } else if (breakpoints.l) {
-      return 2;
+      return 3;
     } else if (breakpoints.xl) {
       return 3;
     } else {

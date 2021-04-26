@@ -86,6 +86,18 @@ export const TimelineCard = styled(Card)`
     width: 380px;
   }
 
+  @media only screen and (max-width: 1550px) {
+    width: 350px;
+  }
+
+  @media only screen and (max-width: 1450px) {
+    width: 320px;
+  }
+
+  @media only screen and (max-width: 1340px) {
+    width: 300px;
+  }
+
   ${md} {
     width: 90%;
     margin: auto;
@@ -120,6 +132,22 @@ export const StartingCard = styled(Card)`
     font-size: 3rem;
     align-self: flex-end;
     cursor: pointer;
+  }
+
+  @media only screen and (max-width: 1850px) {
+    width: 380px;
+  }
+
+  @media only screen and (max-width: 1550px) {
+    width: 350px;
+  }
+
+  @media only screen and (max-width: 1450px) {
+    width: 320px;
+  }
+
+  @media only screen and (max-width: 1340px) {
+    width: 300px;
   }
 
   ${md} {
