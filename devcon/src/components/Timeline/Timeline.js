@@ -195,7 +195,7 @@ const Timeline = () => {
       </TabContainer>
       <Caraousal>
         <Slider {...settings}>
-          <div>
+          <CardWrapper>
             <StartingCard>
               <div style={{ alignSelf: "center" }}>
                 <h2 className="date-text">{data[day].start.date}</h2>
@@ -205,7 +205,7 @@ const Timeline = () => {
                 <AiOutlineRightCircle />
               </div>
             </StartingCard>
-          </div>
+          </CardWrapper>
           {data[day].timeline.map(({ name, id, topic, time }, i) => (
             <CardWrapper key={i}>
               <TimelineCard key={i}>
