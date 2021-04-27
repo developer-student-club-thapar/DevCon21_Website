@@ -38,7 +38,9 @@ const Nav = () => {
         <NavLink to="/#Sponsors" title="Sponsors">
           Sponsors
         </NavLink>
-        <NavItem>Contact</NavItem>
+        <NavLink to="/#Contact" title="Contact">
+          Contact
+        </NavLink>
       </NavAction>
       <HiOutlineMenuAlt3 className="hamburger" />
     </NavWrapper>
