@@ -8,7 +8,9 @@ const defaultQueries = {
 
 module.exports = {
     siteMetadata: {
-        title: "Devcon",
+        title: "Devcon21",
+        siteUrl: "https://devcon21.tech",
+        description: "THE CODE AWAKENS",
     },
     plugins: [
         "gatsby-plugin-anchor-links",
