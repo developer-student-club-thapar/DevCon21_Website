@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import { AiOutlineRightCircle } from "react-icons/ai";
 import { StaticImage } from "gatsby-plugin-image";
@@ -77,7 +77,6 @@ const data = {
         topic: "Cloning app with React",
         time: "5pm-7pm",
       },
-
     ],
     start: {
       date: "15th may 2021",
@@ -132,6 +131,14 @@ const Timeline = () => {
   const [day, setDay] = useState("day1");
   const breakpoints = useBreakpoint();
   const slider = useRef(null);
+
+  const resetSlide = () => {
+    slider.current?.slickGoTo(0);
+  };
+
+  useEffect(() => {
+    resetSlide();
+  }, [day]);
 
   const renderNoOfSildes = () => {
     if (breakpoints.xs) {
