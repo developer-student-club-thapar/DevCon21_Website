@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import { NavAction, NavItem, NavWrapper } from "./Nav.styles";
 import logo from "../../images/logo.png";
+import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 
 const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const NavLink = ({ to, title, children }) => (
     <AnchorLink
       gatsbyLinkProps={{
@@ -42,7 +45,13 @@ const Nav = () => {
           Contact
         </NavLink>
       </NavAction>
-      <HiOutlineMenuAlt3 className="hamburger" />
+      <HiOutlineMenuAlt3
+        className="hamburger"
+        onClick={() => {
+          setIsOpen((prev) => !prev);
+        }}
+      />
+      <HamburgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />
     </NavWrapper>
   );
 };
