@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Card } from "./AboutCard.styles";
+import { Card, StyledButton } from "./AboutCard.styles";
 import gitBranch from "../../images/git-branch.svg";
 
 const AboutCard = () => {
@@ -13,6 +13,7 @@ const AboutCard = () => {
       <div className="artwork">
         <img src={gitBranch} alt="git-branch" />
       </div>
+      <StyledButton>Register</StyledButton>
     </Card>
   );
 };

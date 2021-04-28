@@ -11,6 +11,22 @@ export const Box = styled.div`
   justify-content: center;
   border-radius: 60px;
   margin: 4rem 0;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  cursor: pointer;
+
+  &:hover {
+    background-color: #b19cd9;
+    h1,
+    h3 {
+      color: ${({ theme }) => theme.text};
+    }
+
+    .discord-logo {
+      filter: invert(100%);
+    }
+  }
 
   h1 {
     color: #000;

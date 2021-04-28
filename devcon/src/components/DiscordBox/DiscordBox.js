@@ -5,7 +5,7 @@ import DiscordLogo from "../../images/discord-logo.svg";
 
 const DiscordBox = () => {
   return (
-    <Box>
+    <Box onClick={() => window.open("https://discord.gg/8khTrtWWBT")}>
       <h1>JOIN OUR DISCORD</h1>
       <h3>Stay updated with latest information</h3>
       <img src={DiscordLogo} alt="Discord" className="discord-logo" />

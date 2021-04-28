@@ -56,7 +56,7 @@ export const Card = styled.div`
   ${xs} {
     max-width: 100%;
     margin: 1rem auto;
-    height: 260px;
+    /* height: 280px; */
 
     .heading {
       font-size: 2rem;
@@ -71,5 +71,35 @@ export const Card = styled.div`
       top: -170px;
       right: -110px;
     }
+  }
+`;
+
+export const StyledButton = styled.button`
+  width: 110px;
+  height: 30px;
+  border: 1px solid #737373;
+  border-radius: 6px;
+  background-color: ${({ theme }) => theme.text};
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all ease-out 0.3s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::before {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+  }
+
+  &:hover {
+    box-shadow: inset 400px 0 0 0 #000;
+    color: ${({ theme }) => theme.text};
   }
 `;

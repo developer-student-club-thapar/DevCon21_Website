@@ -1,5 +1,7 @@
 import styled from "styled-components";
+
 import { lg, md, sm, xs } from "../../theme/breakpoints";
+import { StyledButton } from "../AboutCard/AboutCard.styles";
 
 export const CardAlt = styled.div`
   display: flex;
@@ -57,7 +59,7 @@ export const CardAlt = styled.div`
   ${xs} {
     max-width: 100%;
     margin: 1rem auto;
-    height: 260px;
+    /* height: 260px; */
 
     .heading {
       font-size: 2rem;
@@ -73,4 +75,8 @@ export const CardAlt = styled.div`
       left: -90px;
     }
   }
+`;
+
+export const StyledButtonAlt = styled(StyledButton)`
+  margin-left: auto;
 `;
