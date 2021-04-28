@@ -1,6 +1,6 @@
 import React from "react";
 
-import { CardAlt } from "./AboutCardAlt.styles";
+import { CardAlt, StyledButtonAlt } from "./AboutCardAlt.styles";
 import user from "../../images/user.svg";
 
 const AboutCardAlt = () => {
@@ -13,6 +13,7 @@ const AboutCardAlt = () => {
       <div className="artwork">
         <img src={user} alt="user" />
       </div>
+      <StyledButtonAlt>Register</StyledButtonAlt>
     </CardAlt>
   );
 };

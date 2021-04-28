@@ -170,8 +170,8 @@ const Timeline = () => {
   };
 
   return (
-    <TimelineSection id="Timeline">
-      <Heading>Timeline</Heading>
+    <TimelineSection id="Schedule">
+      <Heading>Schedule</Heading>
       <TabContainer>
         <Tab current={day} value={"day1"}>
           Day 1

@@ -5,7 +5,7 @@ export const SponsorsSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 10px;
+  margin: 3rem 0;
 `;
 export const HeadingDiv = styled.div`
   font-weight: 800;
@@ -42,7 +42,7 @@ export const SubHeading = styled.h6`
   margin: 0px 0px;
   font-size: 42px;
   ${md} {
-    font-size: 3rem;
+    font-size: 2rem;
     // padding: 1rem;
   }
 
@@ -59,12 +59,12 @@ export const SponsorTitle = styled.h6`
   font-size: 72px;
 
   ${md} {
-    font-size: 6rem;
+    font-size: 3rem;
     padding: 0px 10px;
   }
 
   ${xs} {
-    font-size: 3rem;
+    font-size: 2rem;
     // line-height: 4rem;
   }
 `;

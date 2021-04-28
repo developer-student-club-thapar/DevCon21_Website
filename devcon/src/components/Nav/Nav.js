@@ -32,8 +32,8 @@ const Nav = () => {
         <NavLink to="/#About" title="About">
           About
         </NavLink>
-        <NavLink to="/#Timeline" title="Timeline">
-          Timeline
+        <NavLink to="/#Schedule" title="Schedule">
+          Schedule
         </NavLink>
         <NavLink to="/#Sponsors" title="Sponsors">
           Sponsors
