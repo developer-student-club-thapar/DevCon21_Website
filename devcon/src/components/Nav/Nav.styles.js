@@ -6,6 +6,11 @@ export const NavWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  position: sticky;
+  top: 0;
+  background: ${(props) => (props.isScroll === true ? "transparent" : "#000")};
+  z-index: 2000;
+  transition: all 0.1s ease-in;
 
   .logo-container {
     width: 134px !important;
