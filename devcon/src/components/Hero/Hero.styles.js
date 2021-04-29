@@ -15,7 +15,10 @@ export const PrimaryTitle = styled.h1`
   line-height: 254px;
   font-weight: 800;
   margin: 0;
-  color: #3dbfe8;
+  /* color: #3dbfe8; */
+  background: -webkit-linear-gradient(180deg, #3dbfe8 19.71%, #14319b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   ${lg} {
     font-size: 180px;

@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { useInView } from "react-intersection-observer";
 
-import { NavAction, NavItem, NavWrapper } from "./Nav.styles";
+import { NavAction, NavItem, NavWrapper, RegisterBtn } from "./Nav.styles";
 import logo from "../../images/logo.png";
+import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
+import { ModalContext } from "../../context/ModalContext";
 
 const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const { setIsVisible } = useContext(ModalContext);
+  const { ref, inView } = useInView({
+    initialInView: true,
+  });
+
   const NavLink = ({ to, title, children }) => (
     <AnchorLink
       gatsbyLinkProps={{
@@ -17,31 +26,45 @@ const Nav = () => {
       to={to}
       title={title}
     >
-      <NavItem>{children}</NavItem>
+      <NavItem isScroll={inView}>{children}</NavItem>
     </AnchorLink>
   );
   return (
-    <NavWrapper>
-      <div className="logo-container">
-        <img src={logo} alt="devcon" className="logo" />
-      </div>
-      <NavAction>
-        <NavLink to="/#Home" title="Home">
-          Home
-        </NavLink>
-        <NavLink to="/#About" title="About">
-          About
-        </NavLink>
-        <NavLink to="/#Timeline" title="Timeline">
-          Timeline
-        </NavLink>
-        <NavLink to="/#Sponsors" title="Sponsors">
-          Sponsors
-        </NavLink>
-        <NavItem>Contact</NavItem>
-      </NavAction>
-      <HiOutlineMenuAlt3 className="hamburger" />
-    </NavWrapper>
+    <>
+      <div ref={ref}></div>
+      <NavWrapper isScroll={inView}>
+        <div className="logo-container">
+          <img src={logo} alt="devcon" className="logo" />
+        </div>
+        <NavAction>
+          <NavLink to="/#Home" title="Home">
+            Home
+          </NavLink>
+          <NavLink to="/#About" title="About">
+            About
+          </NavLink>
+          <NavLink to="/#Schedule" title="Schedule">
+            Schedule
+          </NavLink>
+          <NavLink to="/#Sponsors" title="Sponsors">
+            Sponsors
+          </NavLink>
+          <NavLink to="/#Contact" title="Contact">
+            Contact
+          </NavLink>
+        </NavAction>
+        <RegisterBtn isScroll={inView} onClick={() => setIsVisible(true)}>
+          Register
+        </RegisterBtn>
+        <HiOutlineMenuAlt3
+          className="hamburger"
+          onClick={() => {
+            setIsOpen((prev) => !prev);
+          }}
+        />
+        <HamburgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />
+      </NavWrapper>
+    </>
   );
 };
 

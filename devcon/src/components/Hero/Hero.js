@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 
+import { ModalContext } from "../../context/ModalContext";
 import teaserVideo from "../../images/teaser.mp4";
-
 import {
   ActionBar,
   ActionButton,
@@ -12,12 +12,13 @@ import {
 } from "./Hero.styles";
 
 const Hero = () => {
+  const { setIsVisible } = useContext(ModalContext);
   return (
     <HeroSection id="Home">
       <PrimaryTitle>DEVCON</PrimaryTitle>
       <SecondaryTitle>THE CODE AWAKENS</SecondaryTitle>
       <ActionBar>
-        <ActionButton>Register</ActionButton>
+        <ActionButton onClick={() => setIsVisible(true)}>Register</ActionButton>
         <ActionButton>Discord</ActionButton>
       </ActionBar>
       <StyledVideo autoPlay muted loop>
