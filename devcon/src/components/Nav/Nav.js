@@ -1,17 +1,17 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { useInView } from "react-intersection-observer";
 
-import { NavAction, NavItem, NavWrapper } from "./Nav.styles";
+import { NavAction, NavItem, NavWrapper, RegisterBtn } from "./Nav.styles";
 import logo from "../../images/logo.png";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
+import { ModalContext } from "../../context/ModalContext";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { setIsVisible } = useContext(ModalContext);
   const { ref, inView } = useInView({
-    /* Optional options */
-    threshold: 1,
     initialInView: true,
   });
 
@@ -26,7 +26,7 @@ const Nav = () => {
       to={to}
       title={title}
     >
-      <NavItem>{children}</NavItem>
+      <NavItem isScroll={inView}>{children}</NavItem>
     </AnchorLink>
   );
   return (
@@ -53,6 +53,9 @@ const Nav = () => {
             Contact
           </NavLink>
         </NavAction>
+        <RegisterBtn isScroll={inView} onClick={() => setIsVisible(true)}>
+          Register
+        </RegisterBtn>
         <HiOutlineMenuAlt3
           className="hamburger"
           onClick={() => {
