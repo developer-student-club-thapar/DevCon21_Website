@@ -3,7 +3,7 @@ import React from "react";
 import { Card, StyledButton } from "./AboutCard.styles";
 import gitBranch from "../../images/git-branch.svg";
 
-const AboutCard = () => {
+const AboutCard = ({ setIsVisible }) => {
   return (
     <Card>
       <h1 className="heading">HackOverflow</h1>
@@ -13,7 +13,7 @@ const AboutCard = () => {
       <div className="artwork">
         <img src={gitBranch} alt="git-branch" />
       </div>
-      <StyledButton>Register</StyledButton>
+      <StyledButton onClick={() => setIsVisible(true)}>Register</StyledButton>
     </Card>
   );
 };

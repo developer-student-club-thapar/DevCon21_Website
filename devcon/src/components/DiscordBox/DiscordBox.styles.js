@@ -16,7 +16,7 @@ export const Box = styled.div`
   transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
   cursor: pointer;
 
-  &:hover {
+  /* &:hover {
     background-color: #b19cd9;
     h1,
     h3 {
@@ -26,7 +26,7 @@ export const Box = styled.div`
     .discord-logo {
       filter: invert(100%);
     }
-  }
+  } */
 
   h1 {
     color: #000;
@@ -52,6 +52,7 @@ export const Box = styled.div`
     margin: 4rem auto;
     width: 95%;
     height: 400px;
+    border-radius: 20px;
 
     h1 {
       font-size: 3rem;
@@ -66,6 +67,7 @@ export const Box = styled.div`
     margin: 4rem auto;
     width: 95%;
     height: 350px;
+    border-radius: 20px;
 
     h1 {
       font-size: 2rem;
