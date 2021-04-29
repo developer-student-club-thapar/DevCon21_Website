@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useFormik } from "formik";
 import { AiOutlineRight } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
@@ -12,8 +12,10 @@ import {
   TitleRow,
 } from "./RegisterForm.styles";
 import { RegistrationSchema } from "../../utils/RegistrationSchema";
+import { ModalContext } from "../../context/ModalContext";
 
-const RegisterForm = ({ setIsVisible }) => {
+const RegisterForm = () => {
+  const { setIsVisible } = useContext(ModalContext);
   const formik = useFormik({
     initialValues: {
       name: "",

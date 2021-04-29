@@ -8,6 +8,8 @@ import About from "../components/About/About";
 import DiscordBox from "../components/DiscordBox/DiscordBox";
 import Footer from "../components/Footer/Footer";
 import Sponsors from "../components/Sponsors/Sponsors";
+import Modal from "../components/Modal/Modal";
+import RegisterForm from "../components/RegisterForm/RegisterForm";
 
 const Index = () => {
   return (
@@ -20,6 +22,9 @@ const Index = () => {
         <DiscordBox />
         <Footer />
       </IndexWrapper>
+      <Modal>
+        <RegisterForm />
+      </Modal>
     </Layout>
   );
 };

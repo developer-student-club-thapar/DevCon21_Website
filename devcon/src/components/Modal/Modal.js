@@ -1,8 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 
+import { ModalContext } from "../../context/ModalContext";
 import { ModalWrapper } from "./Modal.styles";
 
-const Modal = ({ isVisible, setIsVisible, children }) => {
+const Modal = ({ children }) => {
+  const { isVisible } = useContext(ModalContext);
   useEffect(() => {
     isVisible
       ? (document.documentElement.style.overflow = "hidden")

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 
 import {
   Wrapper,
@@ -13,11 +13,10 @@ import {
 import AboutCard from "../AboutCard/AboutCard";
 import AboutCardAlt from "../AboutCardAlt/AboutCardAlt";
 import Polygon from "../../images/Polygon.svg";
-import Modal from "../Modal/Modal";
-import RegisterForm from "../RegisterForm/RegisterForm";
+import { ModalContext } from "../../context/ModalContext";
 
 const About = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const { setIsVisible } = useContext(ModalContext);
 
   return (
     <Wrapper id="About">
@@ -45,9 +44,6 @@ const About = () => {
           <StyledPolygon src={Polygon} alt="polygon" />
         </SideAction>
       </ActionContainer>
-      <Modal isVisible={isVisible} setIsVisible={setIsVisible}>
-        <RegisterForm setIsVisible={setIsVisible} />
-      </Modal>
     </Wrapper>
   );
 };

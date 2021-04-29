@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 
+import { ModalContext } from "../../context/ModalContext";
 import teaserVideo from "../../images/teaser.mp4";
-import Modal from "../Modal/Modal";
-import RegisterForm from "../RegisterForm/RegisterForm";
 import {
   ActionBar,
   ActionButton,
@@ -13,8 +12,7 @@ import {
 } from "./Hero.styles";
 
 const Hero = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
+  const { setIsVisible } = useContext(ModalContext);
   return (
     <HeroSection id="Home">
       <PrimaryTitle>DEVCON</PrimaryTitle>
@@ -26,9 +24,6 @@ const Hero = () => {
       <StyledVideo autoPlay muted loop>
         <source src={teaserVideo} type="video/mp4" />
       </StyledVideo>
-      <Modal isVisible={isVisible} setIsVisible={setIsVisible}>
-        <RegisterForm setIsVisible={setIsVisible} />
-      </Modal>
     </HeroSection>
   );
 };
