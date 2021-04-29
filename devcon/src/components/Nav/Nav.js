@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { useInView } from "react-intersection-observer";
 
 import { NavAction, NavItem, NavWrapper } from "./Nav.styles";
 import logo from "../../images/logo.png";
@@ -8,6 +9,11 @@ import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 1,
+    initialInView: true,
+  });
 
   const NavLink = ({ to, title, children }) => (
     <AnchorLink
@@ -24,35 +30,38 @@ const Nav = () => {
     </AnchorLink>
   );
   return (
-    <NavWrapper>
-      <div className="logo-container">
-        <img src={logo} alt="devcon" className="logo" />
-      </div>
-      <NavAction>
-        <NavLink to="/#Home" title="Home">
-          Home
-        </NavLink>
-        <NavLink to="/#About" title="About">
-          About
-        </NavLink>
-        <NavLink to="/#Schedule" title="Schedule">
-          Schedule
-        </NavLink>
-        <NavLink to="/#Sponsors" title="Sponsors">
-          Sponsors
-        </NavLink>
-        <NavLink to="/#Contact" title="Contact">
-          Contact
-        </NavLink>
-      </NavAction>
-      <HiOutlineMenuAlt3
-        className="hamburger"
-        onClick={() => {
-          setIsOpen((prev) => !prev);
-        }}
-      />
-      <HamburgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />
-    </NavWrapper>
+    <>
+      <div ref={ref}></div>
+      <NavWrapper isScroll={inView}>
+        <div className="logo-container">
+          <img src={logo} alt="devcon" className="logo" />
+        </div>
+        <NavAction>
+          <NavLink to="/#Home" title="Home">
+            Home
+          </NavLink>
+          <NavLink to="/#About" title="About">
+            About
+          </NavLink>
+          <NavLink to="/#Schedule" title="Schedule">
+            Schedule
+          </NavLink>
+          <NavLink to="/#Sponsors" title="Sponsors">
+            Sponsors
+          </NavLink>
+          <NavLink to="/#Contact" title="Contact">
+            Contact
+          </NavLink>
+        </NavAction>
+        <HiOutlineMenuAlt3
+          className="hamburger"
+          onClick={() => {
+            setIsOpen((prev) => !prev);
+          }}
+        />
+        <HamburgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />
+      </NavWrapper>
+    </>
   );
 };
 
