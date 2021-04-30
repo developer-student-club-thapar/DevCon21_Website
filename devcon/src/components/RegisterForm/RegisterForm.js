@@ -1,5 +1,8 @@
 import React, { useContext } from "react";
+import axios from "axios";
+import FormData from "form-data";
 import { useFormik } from "formik";
+import Swal from "sweetalert2";
 import { AiOutlineRight } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
 
@@ -16,6 +19,7 @@ import { ModalContext } from "../../context/ModalContext";
 
 const RegisterForm = () => {
   const { setIsVisible } = useContext(ModalContext);
+  const formData = new FormData();
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -24,16 +28,56 @@ const RegisterForm = () => {
       year: "",
       contact: "",
       code: "",
+      event: "",
     },
     validationSchema: RegistrationSchema,
     validateOnBlur: true,
     onSubmit: (values) => {
       console.log(values);
+      const { name, institution, email, year, contact, code, event } = values;
+      formData.append("name", name);
+      formData.append("institution", institution);
+      formData.append("email", email);
+      formData.append("year", year);
+      formData.append("contact", contact);
+      formData.append("code", code);
+      formData.append("event", event);
+      axios
+        .post("https://devcon21.herokuapp.com/participant/form/", formData, {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        })
+        .then((res) => {
+          Swal.fire({
+            title: "Registration Successfull",
+            icon: "success",
+            background: "#171717",
+          });
+        })
+        .catch((err) => {
+          console.log(err);
+          Swal.fire({
+            title: "Registration Failed",
+            text: "Please try again",
+            icon: "error",
+            background: "#171717",
+          });
+        });
+
       setIsVisible(false);
     },
   });
   const { touched } = formik;
-  const { name, institution, email, year, contact, code } = formik.values;
+  const {
+    name,
+    institution,
+    email,
+    year,
+    contact,
+    code,
+    event,
+  } = formik.values;
 
   const changeHandler = (e) => {
     formik.handleChange(e);
@@ -120,8 +164,24 @@ const RegisterForm = () => {
             value={code}
             onChange={changeHandler}
           />
-          {touched.contact && formik.errors.code && (
+          {touched.code && formik.errors.code && (
             <span>{formik.errors.code}</span>
+          )}
+        </InputWrapper>
+        <InputWrapper>
+          <StyledInput
+            as={"select"}
+            id="event"
+            value={event}
+            onChange={changeHandler}
+          >
+            <option value="">Select an event</option>
+            <option value="Webinar">Webinar</option>
+            <option value="Designique">Designique</option>
+            <option value="Both">Both</option>
+          </StyledInput>
+          {touched.event && formik.errors.event && (
+            <span>{formik.errors.event}</span>
           )}
         </InputWrapper>
       </Form>

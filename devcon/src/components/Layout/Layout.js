@@ -7,6 +7,7 @@ import Nav from "../Nav/Nav";
 import { Main } from "./Layout.styles";
 import { Helmet } from "react-helmet";
 import ModalContextProvider from "../../context/ModalContext";
+import PromoBar from "../PromoBar/PromoBar";
 
 const Layout = ({ children }) => {
   return (
@@ -29,6 +30,7 @@ const Layout = ({ children }) => {
         </Helmet>
         <Nav />
         <Main>{children}</Main>
+        <PromoBar />
       </ModalContextProvider>
     </ThemeProvider>
   );

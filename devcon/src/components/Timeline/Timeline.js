@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import { AiOutlineRightCircle } from "react-icons/ai";
+// import { BiLeftArrow } from "react-icons/bi";
 import { StaticImage } from "gatsby-plugin-image";
 import { useBreakpoint } from "gatsby-plugin-breakpoints";
 
@@ -184,6 +185,7 @@ const Timeline = () => {
         </Tab>
       </TabContainer>
       <Caraousal>
+        {/* <BiLeftArrow className="prev-arr" /> */}
         <Slider {...settings} ref={slider}>
           <CardWrapper>
             <StartingCard>
