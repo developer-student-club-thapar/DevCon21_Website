@@ -8,7 +8,7 @@ import {
   SponsorSectionDiv,
   SponsorTitle,
   SponsorCardSection,
-  Card,
+  // Card,
 } from "./Sponsors.styles";
 
 const Sponsors = () => {
@@ -21,23 +21,29 @@ const Sponsors = () => {
       <SponsorSectionDiv>
         <SponsorTitle>Title Sponsors</SponsorTitle>
         <SponsorCardSection>
+          {/* <Card />
           <Card />
           <Card />
           <Card />
           <Card />
-          <Card />
-          <Card />
+          <Card /> */}
+          <SubHeading style={{ margin: "auto" }}>
+            To be announced soon
+          </SubHeading>
         </SponsorCardSection>
       </SponsorSectionDiv>
       <SponsorSectionDiv>
         <SponsorTitle>Other Sponsors</SponsorTitle>
         <SponsorCardSection>
+          {/* <Card />
           <Card />
           <Card />
           <Card />
           <Card />
-          <Card />
-          <Card />
+          <Card /> */}
+          <SubHeading style={{ margin: "auto" }}>
+            To be announced soon
+          </SubHeading>
         </SponsorCardSection>
       </SponsorSectionDiv>
     </SponsorsSection>

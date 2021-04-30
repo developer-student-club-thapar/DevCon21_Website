@@ -18,4 +18,5 @@ export const RegistrationSchema = Yup.object().shape({
     .min(10, "Please enter a valid contact no")
     .required("Required"),
   code: Yup.string(),
+  event: Yup.string().required("Required"),
 });

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Card, StyledButton } from "./AboutCard.styles";
+import { Card, Disabled, StyledButton } from "./AboutCard.styles";
 import gitBranch from "../../images/git-branch.svg";
 
 const AboutCard = ({ setIsVisible }) => {
@@ -13,7 +13,8 @@ const AboutCard = ({ setIsVisible }) => {
       <div className="artwork">
         <img src={gitBranch} alt="git-branch" />
       </div>
-      <StyledButton onClick={() => setIsVisible(true)}>Register</StyledButton>
+      {/* <StyledButton onClick={() => setIsVisible(true)}>Register</StyledButton> */}
+      <Disabled>Registrations start soon</Disabled>
     </Card>
   );
 };

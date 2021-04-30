@@ -52,6 +52,10 @@ export const StyledInput = styled.input`
     outline: none;
     border-bottom: 2px solid #3dbfe8;
   }
+
+  ${xs} {
+    height: 48px;
+  }
 `;
 
 export const SubmitButton = styled.button`

@@ -19,7 +19,11 @@ const Hero = () => {
       <SecondaryTitle>THE CODE AWAKENS</SecondaryTitle>
       <ActionBar>
         <ActionButton onClick={() => setIsVisible(true)}>Register</ActionButton>
-        <ActionButton>Discord</ActionButton>
+        <ActionButton
+          onClick={() => window.open("https://discord.gg/8khTrtWWBT")}
+        >
+          Discord
+        </ActionButton>
       </ActionBar>
       <StyledVideo autoPlay muted loop>
         <source src={teaserVideo} type="video/mp4" />

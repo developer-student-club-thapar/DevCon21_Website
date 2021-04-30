@@ -42,7 +42,16 @@ export const TabContainer = styled.div`
   margin-bottom: 20px;
 `;
 
-export const Caraousal = styled.div``;
+export const Caraousal = styled.div`
+  position: relative;
+
+  .prev-arr {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 2rem;
+  }
+`;
 
 export const Heading = styled.h1`
   font-weight: 800;

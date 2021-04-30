@@ -24,6 +24,7 @@ export const ModalWrapper = styled.div`
   animation-duration: 0.2s;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
+  z-index: 2000;
 
   .modal-main {
     position: fixed;

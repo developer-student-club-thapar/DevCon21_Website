@@ -103,3 +103,8 @@ export const StyledButton = styled.button`
     color: ${({ theme }) => theme.text};
   }
 `;
+
+export const Disabled = styled(StyledButton)`
+  width: fit-content;
+  cursor: not-allowed;
+`;
