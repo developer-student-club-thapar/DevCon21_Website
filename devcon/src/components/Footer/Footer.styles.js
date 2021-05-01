@@ -103,4 +103,12 @@ export const SocialLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  svg {
+    font-size: 1.6rem;
+  }
+
+  &:hover {
+    background-color: #5bc0e8;
+  }
 `;

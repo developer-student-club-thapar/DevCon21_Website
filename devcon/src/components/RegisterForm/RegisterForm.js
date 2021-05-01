@@ -38,9 +38,9 @@ const RegisterForm = () => {
       formData.append("name", name);
       formData.append("institution", institution);
       formData.append("email", email);
-      formData.append("year", year);
-      formData.append("contact", contact);
-      formData.append("code", code);
+      formData.append("yos_designation", year);
+      formData.append("mobile", contact);
+      formData.append("referralCode", code);
       formData.append("event", event);
       axios
         .post("https://devcon21.herokuapp.com/participant/form/", formData, {
@@ -49,14 +49,18 @@ const RegisterForm = () => {
           },
         })
         .then((res) => {
+          setIsVisible(false);
           Swal.fire({
-            title: "Registration Successfull",
+            title: "Registration Successful",
             icon: "success",
             background: "#171717",
           });
+          console.log(res);
         })
         .catch((err) => {
           console.log(err);
+          setIsVisible(false);
+
           Swal.fire({
             title: "Registration Failed",
             text: "Please try again",
@@ -64,8 +68,6 @@ const RegisterForm = () => {
             background: "#171717",
           });
         });
-
-      setIsVisible(false);
     },
   });
   const { touched } = formik;

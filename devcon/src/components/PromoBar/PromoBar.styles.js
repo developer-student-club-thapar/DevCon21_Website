@@ -28,3 +28,12 @@ export const StyledLogo = styled.img`
     height: 30px;
   }
 `;
+
+export const CollegeLogo = styled.img`
+  height: 70px;
+  object-fit: contain;
+
+  ${md} {
+    height: 50px;
+  }
+`;

@@ -24,14 +24,16 @@ const About = () => {
       <ActionContainer>
         <ParaContainer>
           <StyledPara>
-
             A wide assortment of events all been compiled in a 3 days event,
             never seen before sessions and a lot more. It is a grand opportunity
             to learn and network. This event will give students insights into a
-            multitude of technological aspects. The event provides an
-            opportunity for the attendees to figure out their path of choice by
-            witnessing eminent personalities as keynote speakers from various
-            domains talk and share their experience on the same.
+            multitude of technological aspects.
+            <br />
+            <br />
+            The event provides an opportunity for the attendees to figure out
+            their path of choice by witnessing eminent personalities as keynote
+            speakers from various domains talk and share their experience on the
+            same.
           </StyledPara>
 
           <CardContainer>
