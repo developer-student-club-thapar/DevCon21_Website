@@ -46,7 +46,7 @@ export const Card = styled.div`
     margin-right: 1rem;
 
     .artwork {
-      right: -140px;
+      /* right: -140px; */
       top: -140px;
     }
   }
