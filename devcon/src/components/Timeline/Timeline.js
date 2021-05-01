@@ -32,6 +32,9 @@ const data = {
         id: "SDE at Amazon",
         topic: "Importance of Data Structures for developers",
         time: "5pm-7pm",
+        description: `This session is organized to put light on the fact that Data
+        Structures and Algorithms are not only important for clearing
+        interviews, but for developing problem solving skills too!`,
       },
 
       {
@@ -133,6 +136,10 @@ const data = {
   },
 };
 
+const dummyDescription = `This session is organized to put light on the fact that Data
+Structures and Algorithms are not only important for clearing
+interviews, but for developing problem solving skills too!`;
+
 const Timeline = () => {
   const [day, setDay] = useState("day1");
   const breakpoints = useBreakpoint();
@@ -207,9 +214,10 @@ const Timeline = () => {
               </div>
             </StartingCard>
           </CardWrapper>
-          {data[day].timeline.map(({ name, id, topic, time, image }, i) => (
-            <CardWrapper key={i}>
-              {/* <TimelineCard key={i}>
+          {data[day].timeline.map(
+            ({ name, id, topic, time, image, description }, i) => (
+              <CardWrapper key={i}>
+                {/* <TimelineCard key={i}>
                 <CardImg
                   src={image ? image : tempSpeaker}
                   alt="cardImg"
@@ -226,11 +234,14 @@ const Timeline = () => {
                   </CardInfo>
                 </CardSection>
               </TimelineCard> */}
-              <DummyCard>
-                <h2>{topic}</h2>
-              </DummyCard>
-            </CardWrapper>
-          ))}
+                <DummyCard>
+                  <h2>{topic}</h2>
+
+                  <p>{description ? description : dummyDescription}</p>
+                </DummyCard>
+              </CardWrapper>
+            )
+          )}
         </Slider>
       </Caraousal>
     </TimelineSection>

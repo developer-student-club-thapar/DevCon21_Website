@@ -124,6 +124,7 @@ export const StartingCard = styled(Card)`
   background-color: transparent;
   display: flex;
   flex-direction: row;
+  height: 300px; // !! Temporary, remove this in final itr
 
   .date-text {
     color: #3daae8;
@@ -279,16 +280,30 @@ export const CardImg = styled.img`
 
 export const DummyCard = styled(TimelineCard)`
   height: 300px;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 2rem;
 
   h2 {
-    margin: auto;
+    /* margin: auto auto 0 auto; */
+    /* margin: auto; */
     font-size: 1.6rem;
-    text-align: center;
+    line-height: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+    /* text-align: center; */
+  }
+
+  p {
+    font-size: 0.9rem;
+    text-align: left;
+    /* margin: auto; */
   }
 
   ${mdxl} {
     h2 {
       font-size: 1.2rem;
+      line-height: 1.4rem;
     }
   }
 `;
