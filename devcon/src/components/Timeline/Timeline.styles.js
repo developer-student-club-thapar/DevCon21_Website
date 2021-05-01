@@ -234,7 +234,7 @@ export const CardCircle = styled.div`
   align-self: flex-end;
 `;
 
-export const CardImg = styled.div`
+export const CardImg = styled.img`
   border-radius: 0px 0px 100px 0px;
   height: 280px;
   width: 240px;

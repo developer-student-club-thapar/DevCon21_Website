@@ -2,7 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import { AiOutlineRightCircle } from "react-icons/ai";
 // import { BiLeftArrow } from "react-icons/bi";
-import { StaticImage } from "gatsby-plugin-image";
+// import { StaticImage } from "gatsby-plugin-image";
+import tempSpeaker from "../../images/tempSpeaker.jpg";
 import { useBreakpoint } from "gatsby-plugin-breakpoints";
 
 import {
@@ -19,7 +20,9 @@ import {
   Caraousal,
   CardWrapper,
 } from "./Timeline.styles";
+import speaker1 from "../../images/speaker-1.jpg";
 
+// !! Add image property for the speaker images
 const data = {
   day1: {
     timeline: [
@@ -35,6 +38,7 @@ const data = {
         id: "Software Engineering Intern @ Red Hat",
         topic: "Roadmap for Developers",
         time: "5pm-7pm",
+        image: speaker1, // !! Example
       },
 
       {
@@ -202,18 +206,15 @@ const Timeline = () => {
               </div>
             </StartingCard>
           </CardWrapper>
-          {data[day].timeline.map(({ name, id, topic, time }, i) => (
+          {data[day].timeline.map(({ name, id, topic, time, image }, i) => (
             <CardWrapper key={i}>
               <TimelineCard key={i}>
-                <CardImg>
-                  <StaticImage
-                    src="../../images/tempSpeaker.jpg"
-                    alt="cardImg"
-                    loading="eager"
-                    imgClassName="card-img"
-                    className="card-img-container"
-                  />
-                </CardImg>
+                <CardImg
+                  src={image ? image : tempSpeaker}
+                  alt="cardImg"
+                  loading="eager"
+                  className="card-img"
+                />
                 <CardSection>
                   <CardCircle />
                   <CardInfo>
