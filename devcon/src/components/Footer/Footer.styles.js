@@ -95,7 +95,7 @@ export const SecondarySection = styled(PrimarySection)`
 `;
 
 export const SocialLinks = styled.div`
-  background-color: #c4c4c4;
+  background-color: transparent;
   cursor: pointer;
   border-radius: 50%;
   width: 68px;
@@ -103,6 +103,7 @@ export const SocialLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.1s ease-in;
 
   svg {
     font-size: 1.6rem;
