@@ -19,6 +19,7 @@ import {
   Heading,
   Caraousal,
   CardWrapper,
+  DummyCard,
 } from "./Timeline.styles";
 import speaker1 from "../../images/speaker-1.jpg";
 
@@ -208,7 +209,7 @@ const Timeline = () => {
           </CardWrapper>
           {data[day].timeline.map(({ name, id, topic, time, image }, i) => (
             <CardWrapper key={i}>
-              <TimelineCard key={i}>
+              {/* <TimelineCard key={i}>
                 <CardImg
                   src={image ? image : tempSpeaker}
                   alt="cardImg"
@@ -224,7 +225,10 @@ const Timeline = () => {
                     <h5>{time}</h5>
                   </CardInfo>
                 </CardSection>
-              </TimelineCard>
+              </TimelineCard> */}
+              <DummyCard>
+                <h2>{topic}</h2>
+              </DummyCard>
             </CardWrapper>
           ))}
         </Slider>

@@ -49,9 +49,9 @@ export const CardAlt = styled.div`
   ${lg} {
     margin-left: 1rem;
 
-    .artwork {
+    /* .artwork {
       top: -110px;
-    }
+    } */
   }
 
   ${md},

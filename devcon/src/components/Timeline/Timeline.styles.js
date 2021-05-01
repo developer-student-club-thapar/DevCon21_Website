@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { md, xs } from "../../theme/breakpoints";
+import { md, mdxl, xs } from "../../theme/breakpoints";
 
 export const TabButton = styled.div`
   color: ${({ selected }) => (selected ? "#fff" : "#737373")};
@@ -273,6 +273,22 @@ export const CardImg = styled.img`
     .card-img-container {
       height: 200px;
       width: 160px;
+    }
+  }
+`;
+
+export const DummyCard = styled(TimelineCard)`
+  height: 300px;
+
+  h2 {
+    margin: auto;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  ${mdxl} {
+    h2 {
+      font-size: 1.2rem;
     }
   }
 `;

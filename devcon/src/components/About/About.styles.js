@@ -48,7 +48,7 @@ export const ParaContainer = styled.div`
   flex-direction: column;
   max-width: 80%;
 
-  ${mdxl} {
+  @media only screen and (max-width: 1640px) {
     max-width: 95%;
   }
 
