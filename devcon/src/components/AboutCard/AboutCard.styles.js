@@ -11,7 +11,7 @@ export const Card = styled.div`
   border-radius: 12px;
   position: relative;
   overflow: hidden;
-  height: 300px;
+  height: 320px;
   cursor: pointer;
 
   transition: all 0.1s ease-in-out;
@@ -55,7 +55,7 @@ export const Card = styled.div`
   ${sm},
   ${xs} {
     max-width: 100%;
-    margin: 1rem auto;
+    margin: 1.5rem auto;
     /* height: 280px; */
 
     .heading {

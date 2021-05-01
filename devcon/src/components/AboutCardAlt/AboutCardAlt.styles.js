@@ -16,7 +16,7 @@ export const CardAlt = styled.div`
   border-radius: 12px;
   position: relative;
   overflow: hidden;
-  height: 300px;
+  height: 320px;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 
