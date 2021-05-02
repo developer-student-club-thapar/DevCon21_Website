@@ -60,7 +60,7 @@ export const CardAlt = styled.div`
 	${sm},
   ${xs} {
 		max-width: 100%;
-		width: 85%;
+		width: 100%;
 		margin: 1rem auto;
 		/* height: 260px; */
 

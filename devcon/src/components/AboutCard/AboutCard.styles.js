@@ -56,7 +56,7 @@ export const Card = styled.div`
 	${md},
 	${sm},
   ${xs} {
-		max-width: 85%;
+		max-width: 100%;
 		width: 100%;
 		margin: 1.5rem auto;
 		/* height: 280px; */

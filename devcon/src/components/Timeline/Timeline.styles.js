@@ -142,6 +142,18 @@ export const StartingCard = styled(Card)`
 		font-size: 3rem;
 		align-self: flex-end;
 		cursor: pointer;
+		animation: move 0.6s infinite alternate ease-in-out;
+	}
+
+	@keyframes move {
+		0% {
+			transform: translateX(0);
+			opacity: 0.7;
+		}
+		100% {
+			transform: translateX(-0.1em);
+			opacity: 0.9;
+		}
 	}
 
 	@media only screen and (max-width: 1850px) {

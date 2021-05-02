@@ -50,7 +50,7 @@ export const Box = styled.div`
 
 	${md} {
 		margin: 4rem auto;
-		width: 95%;
+		width: 90%;
 		height: 400px;
 		border-radius: 20px;
 
@@ -65,7 +65,7 @@ export const Box = styled.div`
 
 	${xs} {
 		margin: 4rem auto;
-		width: 95%;
+		width: 90%;
 		height: 350px;
 		border-radius: 20px;
 

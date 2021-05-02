@@ -9,9 +9,9 @@ export const Wrapper = styled.div`
 	flex-direction: column;
 	align-self: center;
 	justify-content: center;
-
+	margin: 1rem 0;
 	${md} {
-		padding: 1rem;
+		padding: 1.2rem;
 	}
 `;
 export const StyledHeading = styled.h2`

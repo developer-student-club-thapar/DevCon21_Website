@@ -6,6 +6,7 @@ export const SponsorsSection = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	margin: 3rem 0;
+	padding: 1.2rem;
 `;
 export const HeadingDiv = styled.div`
 	font-weight: 800;
