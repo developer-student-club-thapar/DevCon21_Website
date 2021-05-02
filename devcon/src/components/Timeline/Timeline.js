@@ -43,6 +43,7 @@ const data = {
         topic: "Roadmap for Developers",
         time: "5pm-7pm",
         image: speaker1, // !! Example
+        description: `This session is targeted towards beginners in the field of development. To have a well-structured path to follow to become a full stack web developer in 2021, attend this session!`,
       },
 
       {
@@ -50,10 +51,11 @@ const data = {
         id: "Global Product/Technical Program Leader",
         topic: "Learning out of the box",
         time: "5pm-7pm",
+        description: `Cloud computing is an in-demand skill in the tech industry. Get a sneak peak into technologies like AWS, GCP, DevOps and Websockets through this session.`,
       },
     ],
     start: {
-      date: "14th may 2021",
+      date: "14th May 2021",
       content: "Day 1 is filled making your roots strong",
     },
   },
@@ -62,33 +64,37 @@ const data = {
       {
         name: "Jaskeerat singh randhawa",
         id: "postion @ Google",
-        topic: "Choose your path between Full Stack and Machine Learning",
+        topic: "Exploring Machine Learning & Full Stack Development",
         time: "5pm-7pm",
+        description: `This session is organized to put light on the fact that Data Structures and Algorithms are not only important for clearing interviews, but for developing problem solving skills too!`,
       },
 
       {
         name: "Jaskeerat singh randhawa",
         id: "postion @ Google",
-        topic: "Why Design is Important for Development",
+        topic: "Design - Important aspect of Development",
         time: "5pm-7pm",
+        description: `Most of the Front-end developers find their hand tight with designing skills. This session is targeted for those developers. To make this session more hands-on, it will end with a Design challenge.`,
       },
 
       {
         name: "Jaskeerat singh randhawa",
         id: "postion @ Google",
-        topic: "Building a UI Live",
+        topic: "Hands on with React",
         time: "5pm-7pm",
+        description: `React as a frontend framework is on fire among many top notch companies. Day 2 has a session on “Getting Hands on with React”, where you’ll get insights into React and how you can make interactive Single Page Applications using React.`,
       },
 
       {
         name: "Jaskeerat singh randhawa",
         id: "postion @ Google",
-        topic: "Cloning app with React",
+        topic: "Beginning with the Backend Js",
         time: "5pm-7pm",
+        description: `Vanilla Js is well known for its unforeseen behavior! But what is it more famous for? JavaScript is widely used language for Frontend and Backend. This session will help you get insights into JavaScript as a backend language.`,
       },
     ],
     start: {
-      date: "15th may 2021",
+      date: "15th May 2021",
       content: "Day2 is filled with connecting D's",
     },
   },
@@ -97,40 +103,30 @@ const data = {
       {
         name: "Jaskeerat singh randhawa",
         id: "postion @ Google",
-        topic: "Importance of Data Structures for developers",
+        topic: "Learning about Azure",
         time: "5pm-7pm",
+        description: `Cloud computing is an in-demand skill in the tech industry. Considering that, Day 3 will introduce you to Azure, accompanied by other interactive sessions. `,
       },
 
       {
         name: "Jaskeerat singh randhawa",
         id: "postion @ Google",
-        topic: "Importance of Data Structures for developers",
+        topic: "Grow with Machine Learning",
         time: "5pm-7pm",
+        description: `Machine Learning is on boom these days. There is so much new to explore when it comes to fields like ML and AI. This session is targeted for the students inspired to explore in this field and grow with Machine Learning!`,
       },
 
       {
         name: "Jaskeerat singh randhawa",
         id: "postion @ Google",
-        topic: "Importance of Data Structures for developers",
+        topic: "Session on Personal Development",
         time: "5pm-7pm",
+        description: `A pragmatic Programmer is more than someone who can just write code. Collaborating with the team to work on projects productively requires an efficient mindset and never-to-give-up attitude. `,
       },
 
-      {
-        name: "Jaskeerat singh randhawa",
-        id: "postion @ Google",
-        topic: "Importance of Data Structures for developers",
-        time: "5pm-7pm",
-      },
-
-      {
-        name: "Jaskeerat singh randhawa",
-        id: "postion @ Google",
-        topic: "Importance of Data Structures for developers",
-        time: "5pm-7pm",
-      },
     ],
     start: {
-      date: "16th may 2021",
+      date: "16th May 2021",
       content: "Day 3 is filled with Personal Development ",
     },
   },

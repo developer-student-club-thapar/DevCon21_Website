@@ -24,16 +24,18 @@ const About = () => {
       <ActionContainer>
         <ParaContainer>
           <StyledPara>
-            A wide assortment of events all been compiled in a 3 days event,
-            never seen before sessions and a lot more. It is a grand opportunity
-            to learn and network. This event will give students insights into a
-            multitude of technological aspects.
+            DevCon 2021 is open for anyone to join, and caters to everyone
+            interested in Design and Development of software organized by IEEE
+            NCU. The theme of the events is Design and Development, focusing on
+            both, the visual aspect of our product software, as well as
+            efficiency in our programs.
             <br />
             <br />
-            The event provides an opportunity for the attendees to figure out
-            their path of choice by witnessing eminent personalities as keynote
-            speakers from various domains talk and share their experience on the
-            same.
+            We have webinars, workshops, tutorials, lectures and speeches by
+            some very competent and successful individuals in the industry
+            planned. We are expecting to cater to a group of hundreds of young
+            developers who aim to grow and prosper with us over the course of
+            these events.
           </StyledPara>
 
           <CardContainer>

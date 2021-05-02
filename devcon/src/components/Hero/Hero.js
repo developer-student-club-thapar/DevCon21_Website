@@ -19,7 +19,7 @@ const Hero = () => {
       <SecondaryTitle>THE CODE AWAKENS</SecondaryTitle>
       <ActionBar>
         <ActionButton onClick={() => setIsVisible(true)}>Register</ActionButton>
-        <ActionButton
+        <ActionButton 
           onClick={() => window.open("https://discord.gg/8khTrtWWBT")}
         >
           Discord

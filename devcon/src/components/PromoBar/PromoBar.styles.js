@@ -7,7 +7,7 @@ export const Container = styled.div`
   padding: 1rem;
   justify-content: space-around;
   background-color: #1c1c1c;
-  height: 100px;
+  height: 90px;
   align-items: center;
 
   ${xs} {
@@ -21,7 +21,15 @@ export const Container = styled.div`
 `;
 
 export const StyledLogo = styled.img`
-  height: 40px;
+  height: 50px;
+  object-fit: contain;
+
+  ${md} {
+    height: 30px;
+  }
+`;
+export const StyledLogo2 = styled.img`
+  height: 30px;
   object-fit: contain;
 
   ${md} {

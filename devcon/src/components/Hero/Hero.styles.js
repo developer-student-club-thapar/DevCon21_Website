@@ -37,28 +37,30 @@ export const PrimaryTitle = styled.h1`
 `;
 
 export const SecondaryTitle = styled.h3`
-	font-size: 52px;
-	line-height: 63px;
-	font-weight: 500;
-	padding: 0 2rem;
-	letter-spacing: 0.37em;
-	margin: 0;
+  font-size: 52px;
+  line-height: 63px;
+  font-weight: 500;
+  padding: 0 2rem;
+  letter-spacing: 0.37em;
+  margin: 0;
+  color: #3dbfe8;
 
-	${lg} {
-		font-size: 48px;
-		line-height: 56px;
-	}
+  ${lg} {
+    font-size: 48px;
+    line-height: 56px;
+  }
 
-	${md} {
-		font-size: 2rem;
-		line-height: 5rem;
-	}
+  ${md} {
+    font-size: 2rem;
+    line-height: 5rem;
+  }
 
-	${xs} {
-		font-size: 1rem;
-		line-height: 3rem;
-	}
+  ${xs} {
+    font-size: 1rem;
+    line-height: 3rem;
+  }
 `;
+
 
 export const ActionBar = styled.div`
 	display: flex;

@@ -17,16 +17,16 @@ const Footer = () => {
     <FooterWrapper id="Contact">
       <PrimarySection>
         <Heading>Contact Us</Heading>
-        <Email marginTop={"2rem"}>kushdaga@hotmail.com</Email>
-        <Email marginTop={"1rem"}>(+91) 9205308182</Email>
+        <Email marginTop={"2rem"}>thedeepanshuweb@ieee.org</Email>
+        <Email marginTop={"1rem"}>(+91) 98683 83471/88104 21579</Email>
         <CopyrightText>
           © Rights reserved by{" "}
-          <UnderlineHyperLink href="https://dsctiet.tech/#/">
-            DSC TIET
-          </UnderlineHyperLink>{" "}
-          and{" "}
           <UnderlineHyperLink href="https://ieee.ncuindia.edu/">
             IEEE NCU
+          </UnderlineHyperLink>{" "}
+          and{" "}
+          <UnderlineHyperLink href="https://dsctiet.tech/#/">
+            DSC TIET
           </UnderlineHyperLink>
         </CopyrightText>
       </PrimarySection>
