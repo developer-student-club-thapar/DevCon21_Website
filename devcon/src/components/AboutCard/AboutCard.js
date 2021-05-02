@@ -8,13 +8,13 @@ const AboutCard = ({ setIsVisible }) => {
     <Card>
       <h1 className="heading">HackOverflow</h1>
       <p className="description">
-        A 24hr hackathon for budding developers with alot of prizes
+        A 24hr Open Innovation Hackathon.
       </p>
       <div className="artwork">
         <img src={gitBranch} alt="git-branch" />
       </div>
       {/* <StyledButton onClick={() => setIsVisible(true)}>Register</StyledButton> */}
-      <Disabled>Registrations start soon</Disabled>
+      <Disabled>Registrations Starting Soon</Disabled>
     </Card>
   );
 };
