@@ -56,7 +56,7 @@ const data = {
     ],
     start: {
       date: "14th May 2021",
-      content: "Day 1 is filled making your roots strong",
+      content: "Day 1: Let's get started",
     },
   },
   day2: {
@@ -95,7 +95,7 @@ const data = {
     ],
     start: {
       date: "15th May 2021",
-      content: "Day2 is filled with connecting D's",
+      content: "Day2: Connecting D's of Design and Development",
     },
   },
   day3: {
@@ -123,11 +123,10 @@ const data = {
         time: "5pm-7pm",
         description: `A pragmatic Programmer is more than someone who can just write code. Collaborating with the team to work on projects productively requires an efficient mindset and never-to-give-up attitude. `,
       },
-
     ],
     start: {
       date: "16th May 2021",
-      content: "Day 3 is filled with Personal Development ",
+      content: "Day 3: Self assessment and personal development",
     },
   },
 };
