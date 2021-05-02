@@ -25,9 +25,18 @@ export const PrimaryTitle = styled.h1`
 	font-weight: 800;
 	margin: 0;
 	/* color: #3dbfe8; */
-	background: -webkit-linear-gradient(180deg, #3dbfe8 19.71%, #14319b 100%);
+	background: -webkit-linear-gradient(
+		-69deg,
+		#006eff 15%,
+		#2d80ed 40%,
+		#49a7d6 100%
+	);
+	background-clip: text;
+	text-fill-color: transparent;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	animation: shine 5s infinite ease-in-out;
+	background-size: 300%;
 
 	${lg} {
 		font-size: 180px;
@@ -42,6 +51,20 @@ export const PrimaryTitle = styled.h1`
 	${xs} {
 		font-size: 4rem;
 		line-height: 5rem;
+	}
+
+	@keyframes shine {
+		0% {
+			background-position: 0 50%;
+		}
+
+		50% {
+			background-position: 100% 50%;
+		}
+
+		100% {
+			background-position: 0 50%;
+		}
 	}
 `;
 
