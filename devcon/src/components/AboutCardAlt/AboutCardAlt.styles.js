@@ -17,6 +17,7 @@ export const CardAlt = styled.div`
   position: relative;
   overflow: hidden;
   height: 320px;
+  width: 50%;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 
@@ -57,7 +58,7 @@ export const CardAlt = styled.div`
   ${md},
   ${sm},
   ${xs} {
-    max-width: 100%;
+    min-width: 100%;
     margin: 1rem auto;
     /* height: 260px; */
 
@@ -68,6 +69,7 @@ export const CardAlt = styled.div`
 
     .description {
       font-size: 1rem;
+      max-width: 100%;
     }
 
     .artwork {
