@@ -8,6 +8,15 @@ export const HeroSection = styled.div`
 	align-self: center;
 	justify-content: center;
 	align-items: center;
+	margin-top: 4rem;
+
+	${md} {
+		margin-top: 1rem;
+	}
+
+	${xs} {
+		margin-top: 0.5rem;
+	}
 `;
 
 export const PrimaryTitle = styled.h1`
@@ -70,7 +79,7 @@ export const ActionBar = styled.div`
 
 export const ActionButton = styled.button`
 	padding: 0.8rem 2.2rem;
-	border: ${({ theme }) => `1px solid ${theme.text}`};
+	border: ${({ theme }) => `2px solid #333333`};
 	color: ${({ theme }) => theme.text};
 	background-color: transparent;
 	border-radius: 6px;
@@ -117,7 +126,8 @@ export const StyledVideo = styled.video`
 	margin: 6rem 0;
 	box-shadow: rgb(0, 0, 0) 0px 0px 50px;
 	border-radius: 20px;
-	width: 1078px;
+	width: 1208px;
+
 	object-fit: contain;
 
 	${lg} {
