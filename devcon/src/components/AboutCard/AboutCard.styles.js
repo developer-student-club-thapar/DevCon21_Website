@@ -12,6 +12,7 @@ export const Card = styled.div`
   position: relative;
   overflow: hidden;
   height: 320px;
+  width: 50%;
   cursor: pointer;
 
   transition: all 0.1s ease-in-out;
@@ -54,7 +55,7 @@ export const Card = styled.div`
   ${md},
   ${sm},
   ${xs} {
-    max-width: 100%;
+    min-width: 100%;
     margin: 1.5rem auto;
     /* height: 280px; */
 
