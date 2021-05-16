@@ -173,7 +173,7 @@ export const CountdownTimer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 70%;
+  width: 60%;
   margin: 1rem 0;
 
   .container {
@@ -199,5 +199,13 @@ export const CountdownTimer = styled.div`
   .subtitle {
     font-size: 1rem;
     text-align: center;
+  }
+
+  ${md} {
+    width: 80%;
+  }
+
+  ${xs} {
+    width: 100%;
   }
 `;
