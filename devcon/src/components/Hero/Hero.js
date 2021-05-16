@@ -31,19 +31,19 @@ const Hero = () => {
       <CountdownTimer>
         <div className="container">
           <h3 className="day">{timeLeft.textDay}</h3>
-          <h3 className="subtitle">Day</h3>
+          <h3 className="subtitle">Days</h3>
         </div>
         <div className="container">
           <h3 className="hour">{timeLeft.textHour}</h3>
-          <h3 className="subtitle">Hour</h3>
+          <h3 className="subtitle">Hours</h3>
         </div>
         <div className="container">
           <h3 className="minute">{timeLeft.textMinute}</h3>
-          <h3 className="subtitle">Minute</h3>
+          <h3 className="subtitle">Minutes</h3>
         </div>
         <div className="container">
           <h3 className="second">{timeLeft.textSecond}</h3>
-          <h3 className="subtitle">Second</h3>
+          <h3 className="subtitle">Seconds</h3>
         </div>
       </CountdownTimer>
       <ActionBar>
