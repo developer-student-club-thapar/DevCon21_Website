@@ -66,6 +66,7 @@ export const SubmitButton = styled.button`
   color: #fff;
   cursor: pointer;
   border-radius: 5px;
+  opacity: ${(props) => props.disabled && "0.5"};
 
   span {
     font-size: 1.2rem;

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import axios from "axios";
 import FormData from "form-data";
 import { useFormik } from "formik";
@@ -18,6 +18,7 @@ import { RegistrationSchema } from "../../utils/RegistrationSchema";
 import { ModalContext } from "../../context/ModalContext";
 
 const RegisterForm = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const { setIsVisible } = useContext(ModalContext);
   const formData = new FormData();
   const formik = useFormik({
@@ -42,6 +43,7 @@ const RegisterForm = () => {
       formData.append("mobile", contact);
       formData.append("referralCode", code);
       formData.append("event", event);
+      setIsLoading(true);
       axios
         .post("https://devcon21.herokuapp.com/participant/form/", formData, {
           headers: {
@@ -50,6 +52,7 @@ const RegisterForm = () => {
         })
         .then((res) => {
           setIsVisible(false);
+          setIsLoading(false);
           Swal.fire({
             title: "Registration Successful",
             icon: "success",
@@ -187,8 +190,14 @@ const RegisterForm = () => {
           )}
         </InputWrapper>
       </Form>
-      <SubmitButton onClick={formik.handleSubmit}>
-        <span>Register</span>&nbsp; <AiOutlineRight className="icon" />
+      <SubmitButton onClick={formik.handleSubmit} disabled={isLoading}>
+        {!isLoading ? (
+          <>
+            <span>Register</span>&nbsp; <AiOutlineRight className="icon" />
+          </>
+        ) : (
+          <span>Registering...</span>
+        )}
       </SubmitButton>
     </FormWrapper>
   );
