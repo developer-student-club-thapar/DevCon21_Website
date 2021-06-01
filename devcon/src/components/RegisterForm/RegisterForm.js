@@ -74,6 +74,15 @@ const RegisterForm = () => {
               icon: "error",
               background: "#171717",
             });
+          } else if (
+            err.response.data === "Please enter a valid 10 digit phone number!"
+          ) {
+            Swal.fire({
+              title: "Registration Failed",
+              text: err.response.data,
+              icon: "error",
+              background: "#171717",
+            });
           } else {
             Swal.fire({
               title: "Registration Failed",
