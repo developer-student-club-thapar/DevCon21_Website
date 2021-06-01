@@ -61,15 +61,27 @@ const RegisterForm = () => {
           console.log(res);
         })
         .catch((err) => {
-          console.log(err);
+          console.log(err.response);
           setIsVisible(false);
+          setIsLoading(false);
 
-          Swal.fire({
-            title: "Registration Failed",
-            text: "Please try again",
-            icon: "error",
-            background: "#171717",
-          });
+          if (
+            err.response.data === "Participant with email already registered."
+          ) {
+            Swal.fire({
+              title: "Registration Failed",
+              text: "Email Already Registered",
+              icon: "error",
+              background: "#171717",
+            });
+          } else {
+            Swal.fire({
+              title: "Registration Failed",
+              text: "Please try again",
+              icon: "error",
+              background: "#171717",
+            });
+          }
         });
     },
   });
