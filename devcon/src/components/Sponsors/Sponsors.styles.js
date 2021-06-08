@@ -92,6 +92,7 @@ export const SponsorImgContainer = styled.div`
   border: 2px solid #fff;
   border-radius: 10px;
   padding: 1.5rem;
+  cursor: pointer;
 
   ${xs} {
     margin-bottom: 1rem;
