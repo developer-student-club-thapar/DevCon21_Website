@@ -25,7 +25,7 @@ const AboutCard = ({ setIsVisible }) => {
       {/* <Disabled>Registrations Starting Soon</Disabled> */}
       <div
         className="apply-button"
-        data-hackathon-slug="Devcon'21-HackOverflow"
+        data-hackathon-slug="devcon-hack"
         data-button-theme="dark"
         style={{ height: "44px", width: "312px", border: "1px solid #737373" }}
       ></div>

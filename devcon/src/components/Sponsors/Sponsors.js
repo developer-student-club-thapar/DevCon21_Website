@@ -28,7 +28,11 @@ const Sponsors = () => {
       <SponsorSectionDiv>
         <SponsorTitle>Gold Sponsors</SponsorTitle>
         <SponsorCardSection>
-          <SponsorImgContainer>
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://devfolio.co/");
+            }}
+          >
             <SponsorImg src={Devfolio} alt="Devfolio" />
           </SponsorImgContainer>
         </SponsorCardSection>
@@ -36,16 +40,32 @@ const Sponsors = () => {
       <SponsorSectionDiv>
         <SponsorTitle>Silver Sponsors</SponsorTitle>
         <SponsorCardSection>
-          <SponsorImgContainer>
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://celo.org/");
+            }}
+          >
             <SponsorImg src={celo} alt="Celo" />
           </SponsorImgContainer>
-          <SponsorImgContainer>
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://tezos.com/");
+            }}
+          >
             <SponsorImg src={tezos} alt="Tezos" />
           </SponsorImgContainer>
-          <SponsorImgContainer>
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://polygon.technology/");
+            }}
+          >
             <SponsorImg src={polygon} alt="Polygon" />
           </SponsorImgContainer>
-          <SponsorImgContainer>
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://www.portis.io/");
+            }}
+          >
             <SponsorImg src={portis} alt="Portis" />
           </SponsorImgContainer>
         </SponsorCardSection>
@@ -53,7 +73,11 @@ const Sponsors = () => {
       <SponsorSectionDiv>
         <SponsorTitle>Education Partner</SponsorTitle>
         <SponsorCardSection>
-          <SponsorImgContainer>
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://www.microsoft.com/en-in");
+            }}
+          >
             <SponsorImg src={microsoft} alt="Microsoft" />
           </SponsorImgContainer>
         </SponsorCardSection>
