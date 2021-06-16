@@ -17,6 +17,12 @@ import tezos from "../../images/tezos.png";
 import portis from "../../images/portis.png";
 import polygon from "../../images/polygon.png";
 import microsoft from "../../images/microsoft.svg";
+import taskade from "../../images/taskade.png";
+import codingBlocks from "../../images/cblogo.png";
+import axure from "../../images/Axure_Logo.png";
+import miro from "../../images/miro.png";
+import streamyard from "../../images/streamyard.png";
+import codeforcause from "../../images/cfc.png";
 
 const Sponsors = () => {
   return (
@@ -34,6 +40,20 @@ const Sponsors = () => {
             }}
           >
             <SponsorImg src={Devfolio} alt="Devfolio" />
+          </SponsorImgContainer>
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://www.taskade.com/");
+            }}
+          >
+            <SponsorImg src={taskade} alt="Taskade" />
+          </SponsorImgContainer>
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://codingblocks.com/");
+            }}
+          >
+            <SponsorImg src={codingBlocks} alt="Coding Blocks" />
           </SponsorImgContainer>
         </SponsorCardSection>
       </SponsorSectionDiv>
@@ -68,6 +88,20 @@ const Sponsors = () => {
           >
             <SponsorImg src={portis} alt="Portis" />
           </SponsorImgContainer>
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://www.axure.com/");
+            }}
+          >
+            <SponsorImg src={axure} alt="Axure" />
+          </SponsorImgContainer>
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://miro.com/");
+            }}
+          >
+            <SponsorImg src={miro} alt="Miro" />
+          </SponsorImgContainer>
         </SponsorCardSection>
       </SponsorSectionDiv>
       <SponsorSectionDiv>
@@ -79,6 +113,30 @@ const Sponsors = () => {
             }}
           >
             <SponsorImg src={microsoft} alt="Microsoft" />
+          </SponsorImgContainer>
+        </SponsorCardSection>
+      </SponsorSectionDiv>
+      <SponsorSectionDiv>
+        <SponsorTitle>Community Partner</SponsorTitle>
+        <SponsorCardSection>
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://streamyard.com/");
+            }}
+          >
+            <SponsorImg src={codeforcause} alt="Code For Cause" />
+          </SponsorImgContainer>
+        </SponsorCardSection>
+      </SponsorSectionDiv>
+      <SponsorSectionDiv>
+        <SponsorTitle>Streaming Partner</SponsorTitle>
+        <SponsorCardSection>
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://streamyard.com/");
+            }}
+          >
+            <SponsorImg src={streamyard} alt="StreamYard" />
           </SponsorImgContainer>
         </SponsorCardSection>
       </SponsorSectionDiv>

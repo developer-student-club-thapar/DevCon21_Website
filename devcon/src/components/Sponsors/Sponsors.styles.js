@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { md, sm, xs } from "../../theme/breakpoints";
+import { lg, md, mdxl, sm, xs } from "../../theme/breakpoints";
 
 export const SponsorsSection = styled.div`
   display: flex;
@@ -58,6 +58,7 @@ export const SponsorTitle = styled.h6`
   color: white;
   margin: 10px 0px 30px 0px;
   font-size: 70px;
+  white-space: nowrap;
 
   ${md} {
     font-size: 3rem;
@@ -93,18 +94,36 @@ export const SponsorImgContainer = styled.div`
   border-radius: 10px;
   padding: 1.5rem;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-basis: 30%;
+
+  ${mdxl} {
+    flex-basis: 35%;
+  }
+
+  ${sm} {
+    flex-basis: 40%;
+  }
 
   ${xs} {
+    flex-basis: 100%;
     margin-bottom: 1rem;
   }
 `;
 
 export const SponsorImg = styled.img`
-  height: 70px;
+  height: 90px;
   object-fit: contain;
   margin: 1rem 1rem;
 
+  ${mdxl} {
+    height: 80px;
+  }
+
   ${sm} {
     height: 3rem;
+    min-width: 100%;
   }
 `;
