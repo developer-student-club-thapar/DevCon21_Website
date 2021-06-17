@@ -121,7 +121,7 @@ const Sponsors = () => {
         <SponsorCardSection>
           <SponsorImgContainer
             onClick={() => {
-              window.open("https://streamyard.com/");
+              window.open("https://codeforcause.org/");
             }}
           >
             <SponsorImg src={codeforcause} alt="Code For Cause" />
