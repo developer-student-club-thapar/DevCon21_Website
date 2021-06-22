@@ -23,6 +23,7 @@ import axure from "../../images/Axure_Logo.png";
 import miro from "../../images/miro.png";
 import streamyard from "../../images/streamyard.png";
 import codeforcause from "../../images/cfc.png";
+import sketch from "../../images/sketch.png";
 
 const Sponsors = () => {
   return (
@@ -101,6 +102,18 @@ const Sponsors = () => {
             }}
           >
             <SponsorImg src={miro} alt="Miro" />
+          </SponsorImgContainer>
+        </SponsorCardSection>
+      </SponsorSectionDiv>
+      <SponsorSectionDiv>
+        <SponsorTitle>Bronze Sponsors</SponsorTitle>
+        <SponsorCardSection>
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://www.sketch.com/");
+            }}
+          >
+            <SponsorImg src={sketch} alt="Sketch" />
           </SponsorImgContainer>
         </SponsorCardSection>
       </SponsorSectionDiv>
