@@ -24,6 +24,12 @@ import miro from "../../images/miro.png";
 import streamyard from "../../images/streamyard.png";
 import codeforcause from "../../images/cfc.png";
 import sketch from "../../images/sketch.png";
+import digitalocean from "../../images/digitalocean.svg";
+import oreilly from "../../images/oreilly.png";
+import givemycertificate from "../../images/givemycertificate.png";
+import codesauce from "../../images/codesauce.png";
+import balsamic from "../../images/balsamic.png";
+import elastic from "../../images/elastic.svg";
 
 const Sponsors = () => {
   return (
@@ -115,6 +121,13 @@ const Sponsors = () => {
           >
             <SponsorImg src={sketch} alt="Sketch" />
           </SponsorImgContainer>
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://www.digitalocean.com/");
+            }}
+          >
+            <SponsorImg src={digitalocean} alt="DigitalOcean" />
+          </SponsorImgContainer>
         </SponsorCardSection>
       </SponsorSectionDiv>
       <SponsorSectionDiv>
@@ -127,6 +140,13 @@ const Sponsors = () => {
           >
             <SponsorImg src={microsoft} alt="Microsoft" />
           </SponsorImgContainer>
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://www.oreilly.com/");
+            }}
+          >
+            <SponsorImg src={oreilly} alt="O'Reilly" />
+          </SponsorImgContainer>
         </SponsorCardSection>
       </SponsorSectionDiv>
       <SponsorSectionDiv>
@@ -138,6 +158,40 @@ const Sponsors = () => {
             }}
           >
             <SponsorImg src={codeforcause} alt="Code For Cause" />
+          </SponsorImgContainer>
+
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://discord.gg/32HyKKzjSr");
+            }}
+          >
+            <SponsorImg src={codesauce} alt="Code Sauce" />
+          </SponsorImgContainer>
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://www.elastic.co/");
+            }}
+          >
+            <SponsorImg src={elastic} alt="Elastic" />
+          </SponsorImgContainer>
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://balsamiq.com/");
+            }}
+          >
+            <SponsorImg src={balsamic} alt="Balsamiq" />
+          </SponsorImgContainer>
+        </SponsorCardSection>
+      </SponsorSectionDiv>
+      <SponsorSectionDiv>
+        <SponsorTitle>Certification Partner</SponsorTitle>
+        <SponsorCardSection>
+          <SponsorImgContainer
+            onClick={() => {
+              window.open("https://www.givemycertificate.com/");
+            }}
+          >
+            <SponsorImg src={givemycertificate} alt="Give My Certificate" />
           </SponsorImgContainer>
         </SponsorCardSection>
       </SponsorSectionDiv>
