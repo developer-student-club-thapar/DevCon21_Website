@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { lg, md, mdxl, sm, xs } from "../../theme/breakpoints";
+import { md, mdxl, sm, xs } from "../../theme/breakpoints";
 
 export const SponsorsSection = styled.div`
   display: flex;

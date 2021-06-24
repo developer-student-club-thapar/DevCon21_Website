@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import { Card, Disabled, StyledButton } from "./AboutCard.styles";
+import { Card } from "./AboutCard.styles";
 import gitBranch from "../../images/git-branch.svg";
 
 const AboutCard = ({ setIsVisible }) => {
