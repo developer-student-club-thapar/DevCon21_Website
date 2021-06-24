@@ -251,7 +251,7 @@ export const CardImg = styled.img`
   border-radius: 0px 0px 100px 0px;
   height: 280px;
   width: 240px;
-  object-fit: contain;
+  object-fit: cover;
   box-shadow: 0 0 0 10px #e5e5e5, 0 0 0 20px #f2f2f2;
   position: relative;
   top: -5px;
