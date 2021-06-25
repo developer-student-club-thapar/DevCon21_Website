@@ -144,7 +144,8 @@ export const ActionButton = styled.button`
     width: 50%;
   }
 `;
-
+export const YoutubeButton = styled.button`border-radius:10px;
+padding: 20px 20px`;
 export const StyledVideo = styled.video`
   margin: 6rem 0;
   box-shadow: rgb(0, 0, 0) 0px 0px 50px;

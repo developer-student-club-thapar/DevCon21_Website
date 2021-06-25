@@ -5,7 +5,7 @@ import { AiOutlineRightCircle } from "react-icons/ai";
 // import { StaticImage } from "gatsby-plugin-image";
 import tempSpeaker from "../../images/tempSpeaker.jpg";
 import { useBreakpoint } from "gatsby-plugin-breakpoints";
-
+import {FaYoutube} from 'react-icons/fa'
 import {
   TimelineCard,
   StartingCard,
@@ -21,6 +21,7 @@ import {
   CardWrapper,
   // DummyCard,
 } from "./Timeline.styles";
+import {ActionButton} from '../Hero/Hero.styles'
 import { data } from "../../data/sessions";
 
 // const dummyDescription = `This session is organized to put light on the fact that Data
@@ -72,6 +73,7 @@ const Timeline = () => {
   return (
     <TimelineSection id="Schedule">
       <Heading>Schedule</Heading>
+
       <TabContainer>
         <Tab current={day} value={"day1"}>
           Day 1
@@ -83,6 +85,28 @@ const Timeline = () => {
           Day 3
         </Tab>
       </TabContainer>
+      <ActionButton
+        style={{
+          marginLeft: "20px",
+          width: "300px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+        onClick={() => window.open("https://minify.live/Devcon21")}
+      >
+        Join on Youtube
+        <div
+          style={{
+            width: "45px",
+            paddingLeft: "10px",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <FaYoutube size="large" style={{ width: "55px" }} />
+        </div>
+      </ActionButton>
       <Caraousal>
         {/* <BiLeftArrow className="prev-arr" /> */}
         <Slider {...settings} ref={slider}>
