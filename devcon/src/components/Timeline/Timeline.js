@@ -93,7 +93,7 @@ const Timeline = () => {
           alignItems: "center",
           justifyContent: "center",
         }}
-        onClick={() => window.open("https://minify.live/Devcon21")}
+        onClick={() => window.open("https://minify.live/Devcon21Day3")}
       >
         Join on Youtube
         <div
